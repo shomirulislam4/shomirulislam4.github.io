@@ -11,21 +11,20 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 40px;
+        gap: 60px;
 
         nav {
             display: flex;
-            gap: 40px;
+            gap: 60px;
     
             a {
                 @include base.large__text;
                 display: block;
                 padding: 10px 0;
+                font-family: 'Anonymous Pro', monospace;
                 font-weight: 700;
-    
-                &:hover {
-                    @include utils.text__shadow;
-                }
+                color: base.$black;
+                position: relative;
             }
         }
     
@@ -54,6 +53,40 @@
         img {
             height: 24px;
             width: 24px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .sb__header .wrapper nav a {
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background: base.$SecondaryColor;
+            @include utils.transition-03s;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            right: 0;
+            height: 2px;
+            width: 0;
+            background: base.$SecondaryColor;
+            @include utils.transition-03s;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+        &:hover::before {
+            width: 100%;
         }
     }
 }

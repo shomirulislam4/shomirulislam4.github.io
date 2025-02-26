@@ -81,11 +81,11 @@ h6 {
 p, li {
   font-size: 18px;
   line-height: 29px;
-  font-family: "Anonymous Pro", monospace;
+  font-family: "Roboto", sans-serif;
 }
 
 span, a {
-  font-family: "Anonymous Pro", monospace;
+  font-family: "Roboto", sans-serif;
 }
 
 /*** Responsive ***/
@@ -293,49 +293,49 @@ span, a {
 @media screen and (min-width: 200px) and (max-width: 289px) {
   .button__one {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 23px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
   .button__one {
     font-size: 13px;
-    line-height: 20px;
+    line-height: 25px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
   .button__one {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 26px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .button__one {
     font-size: 15px;
-    line-height: 23px;
+    line-height: 17px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .button__one {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 30px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .button__one {
     font-size: 18px;
-    line-height: 26px;
+    line-height: 32px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .button__one {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 34px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
   .button__one {
     font-size: 22px;
-    line-height: 30px;
+    line-height: 36px;
   }
 }
 .button__one:disabled {
@@ -397,49 +397,49 @@ span, a {
 @media screen and (min-width: 200px) and (max-width: 289px) {
   .button__two {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 23px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
   .button__two {
     font-size: 13px;
-    line-height: 20px;
+    line-height: 25px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
   .button__two {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 26px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .button__two {
     font-size: 15px;
-    line-height: 23px;
+    line-height: 17px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .button__two {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 30px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .button__two {
     font-size: 18px;
-    line-height: 26px;
+    line-height: 32px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .button__two {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 34px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
   .button__two {
     font-size: 22px;
-    line-height: 30px;
+    line-height: 36px;
   }
 }
 .button__two:disabled {
@@ -501,49 +501,49 @@ span, a {
 @media screen and (min-width: 200px) and (max-width: 289px) {
   .button__three {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 23px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
   .button__three {
     font-size: 13px;
-    line-height: 20px;
+    line-height: 25px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
   .button__three {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 26px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .button__three {
     font-size: 15px;
-    line-height: 23px;
+    line-height: 17px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .button__three {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 30px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .button__three {
     font-size: 18px;
-    line-height: 26px;
+    line-height: 32px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .button__three {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 34px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
   .button__three {
     font-size: 22px;
-    line-height: 30px;
+    line-height: 36px;
   }
 }
 .button__three:disabled {
@@ -605,6 +605,15 @@ span, a {
   height: auto;
 }
 
+.sib__section__title {
+  margin-bottom: 30px;
+}
+.sib__section__title h2 {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+  text-align: center;
+}
+
 ::-moz-selection {
   background: rgba(87, 75, 144, 0.5);
   color: #F9F9F9;
@@ -645,67 +654,67 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 60px;
 }
 .sb__header .wrapper nav {
   display: flex;
-  gap: 40px;
+  gap: 60px;
 }
 .sb__header .wrapper nav a {
   display: block;
   padding: 10px 0;
+  font-family: "Anonymous Pro", monospace;
   font-weight: 700;
+  color: #000000;
+  position: relative;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
   .sb__header .wrapper nav a {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 23px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
   .sb__header .wrapper nav a {
     font-size: 13px;
-    line-height: 20px;
+    line-height: 25px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
   .sb__header .wrapper nav a {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 26px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .sb__header .wrapper nav a {
     font-size: 15px;
-    line-height: 23px;
+    line-height: 17px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .sb__header .wrapper nav a {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 30px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .sb__header .wrapper nav a {
     font-size: 18px;
-    line-height: 26px;
+    line-height: 32px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .sb__header .wrapper nav a {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 34px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
   .sb__header .wrapper nav a {
     font-size: 22px;
-    line-height: 30px;
+    line-height: 36px;
   }
-}
-.sb__header .wrapper nav a:hover {
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 .sb__header .wrapper .button__one {
   padding: 0.625rem 1.5rem;
@@ -730,6 +739,42 @@ a:hover {
   width: 24px;
 }
 
+@media (min-width: 992px) {
+  .sb__header .wrapper nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: #00FF00;
+    transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+  }
+  .sb__header .wrapper nav a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #00FF00;
+    transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+  }
+  .sb__header .wrapper nav a:hover::after {
+    width: 100%;
+  }
+  .sb__header .wrapper nav a:hover::before {
+    width: 100%;
+  }
+}
 /* Mobile Menu */
 @media (max-width: 991px) {
   .sb__header .wrapper {
@@ -778,9 +823,19 @@ a:hover {
     display: block;
   }
 }
+/* Global */
+span {
+  display: block;
+}
+
+section {
+  margin-top: 120px;
+}
+
 /*** Start of Hero Section ***/
 .sib__hero__section {
   height: 750px;
+  margin-top: 0;
 }
 .sib__hero__section .container, .sib__hero__section .row {
   height: 100%;
@@ -798,9 +853,22 @@ a:hover {
   margin-bottom: 20px;
 }
 .sib__hero__section .content h1 {
+  position: relative;
   font-size: 136px;
   line-height: 100%;
   font-weight: 700;
+}
+.sib__hero__section .content h1::before {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  content: "";
+  display: block;
+  height: 100px;
+  width: 100px;
+  background: #00FF00;
+  border-radius: 50%;
+  z-index: -1;
 }
 .sib__hero__section .content .cta__buttons {
   display: flex;
@@ -822,4 +890,147 @@ a:hover {
 
 /*** End  of Hero Section ***/
 /*** Start of About Me Section ***/
-/*** End of About Me Section ***//*# sourceMappingURL=main.css.map */
+.sib__aboutme__section .wrapper .about__me span {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .sib__aboutme__section .wrapper .about__me span {
+    font-size: 12px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .sib__aboutme__section .wrapper .about__me span {
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .sib__aboutme__section .wrapper .about__me span {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .sib__aboutme__section .wrapper .about__me span {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .sib__aboutme__section .wrapper .about__me span {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .sib__aboutme__section .wrapper .about__me span {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .sib__aboutme__section .wrapper .about__me span {
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .sib__aboutme__section .wrapper .about__me span {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+.sib__aboutme__section .wrapper .info {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 40px;
+}
+.sib__aboutme__section .wrapper .info .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.sib__aboutme__section .wrapper .info .item .number {
+  display: flex;
+  align-items: flex-end;
+  font-size: 60px;
+  line-height: 100%;
+  font-weight: 700;
+  gap: 5px;
+  font-family: "Anonymous Pro";
+}
+.sib__aboutme__section .wrapper .info .item .number span {
+  font-size: 50px;
+  line-height: 100%;
+  font-family: "Anonymous Pro";
+}
+.sib__aboutme__section .wrapper .info .item span {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-family: "Anonymous Pro";
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .sib__aboutme__section .wrapper .info .item span {
+    font-size: 12px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .sib__aboutme__section .wrapper .info .item span {
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .sib__aboutme__section .wrapper .info .item span {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .sib__aboutme__section .wrapper .info .item span {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .sib__aboutme__section .wrapper .info .item span {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .sib__aboutme__section .wrapper .info .item span {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .sib__aboutme__section .wrapper .info .item span {
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .sib__aboutme__section .wrapper .info .item span {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+
+/*** End of About Me Section ***/
+/*** Start of Skills Section Section ***/
+/*** End of Skills Section Section ***/
+/*** Start of a Section ***/
+/*** End of a Section ***/
+/*** Start of a Section ***/
+/*** End of a Section ***/
+/*** Start of a Section ***/
+/*** End of a Section ***//*# sourceMappingURL=main.css.map */

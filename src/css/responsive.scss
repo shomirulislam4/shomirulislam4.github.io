@@ -1,7 +1,9 @@
 @media (min-width: 290px) and (max-width: 414px) {
+    /*Logo*/
     .sb__logo {
         width: 120px;
     }
+    /*Header*/
     .sb__header {
         padding: 10px;
         .wrapper {
@@ -32,6 +34,12 @@
             }
             h1 {
                 font-size: 48px;
+                &::before {
+                    top: -15px;
+                    right: 0;
+                    height: 50px;
+                    width: 50px;
+                }
             }
             .cta__buttons {
                 margin-top: 20px;
@@ -39,21 +47,17 @@
             }
         }
         .image {
-            height: 400px;
-            justify-content: center;
-            margin-top: 30px;
-            img {
-                height: 100%;
-                width: auto;
-            }
+            margin-top: 20px;
         }
     }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
+    /*Logo*/
     .sb__logo {
         width: 120px;
     }
+    /*Header*/
     .sb__header {
         padding: 10px;
         .wrapper {
@@ -72,6 +76,12 @@
             }
             h1 {
                 font-size: 66px;
+                &::before {
+                    top: -15px;
+                    right: 0;
+                    height: 60px;
+                    width: 60px;
+                }
             }
             .cta__buttons {
                 margin-top: 25px;
@@ -91,6 +101,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    /*Logo*/
     .sb__logo {
         width: 150px;
     }
@@ -106,6 +117,13 @@
             }
             h1 {
                 font-size: 66px;
+                line-height: 110%;
+                &::before {
+                    top: 40px;
+                    right: -15px;
+                    height: 80px;
+                    width: 80px;
+                }
             }
             .cta__buttons {
                 margin-top: 25px;
@@ -125,6 +143,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    /*Logo*/
     .sb__logo {
         width: 150px;
     }
@@ -139,6 +158,12 @@
             }
             h1 {
                 font-size: 72px;
+                &::before {
+                    top: -10px;
+                    right: -10px;
+                    height: 60px;
+                    width: 60px;
+                }
             }
             .cta__buttons {
                 margin-top: 25px;
@@ -149,6 +174,11 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    /*Header*/
+    .sb__header .wrapper,
+    .sb__header .wrapper nav {
+        gap: 40px;
+    }
     /*Hero Section*/
     .sib__hero__section {
         height: 520px;
@@ -160,6 +190,12 @@
             }
             h1 {
                 font-size: 98px;
+                &::before {
+                    top: -15px;
+                    right: -15px;
+                    height: 80px;
+                    width: 80px;
+                }
             }
             .cta__buttons {
                 margin-top: 30px;
@@ -170,6 +206,11 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
+    /*Header*/
+    .sb__header .wrapper,
+    .sb__header .wrapper nav {
+        gap: 50px;
+    }
     /*Hero Section*/
     .sib__hero__section {
         height: 650px;
