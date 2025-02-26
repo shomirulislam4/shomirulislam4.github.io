@@ -1,0 +1,57 @@
+@use './base/index' as base;
+@use './components/index' as comps;
+@use './utilities/utilities' as utils;
+@forward './layouts/index';
+
+/*** Start of Hero Section ***/
+.sib__hero__section {
+    height: 750px;
+
+    .container,.row {
+        height: 100%;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-transform: uppercase;
+        height: 100%;
+
+        h3 {
+            font-size: 50px;
+            line-height: 130%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 136px;
+            line-height: 100%;
+            font-weight: 700;
+        }
+
+        .cta__buttons {
+            display: flex;
+            gap: 40px;
+            margin-top: 50px;
+        }
+    }
+
+    .image {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        
+        img {
+            width: 100%;
+            height: auto;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+    }
+}
+/*** End  of Hero Section ***/
+
+/*** Start of About Me Section ***/
+/*** End of About Me Section ***/
