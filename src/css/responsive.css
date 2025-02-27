@@ -1,4 +1,14 @@
 @media (min-width: 290px) and (max-width: 414px) {
+  section {
+    margin-top: 20px;
+  }
+  .sib__section__title {
+    margin-bottom: 15px;
+  }
+  .sib__section__title h2 {
+    font-size: 34px;
+    line-height: 50px;
+  }
   /*Logo*/
   .sb__logo {
     width: 120px;
@@ -50,8 +60,34 @@
   .sib__hero__section .image {
     margin-top: 20px;
   }
+  /*About Me Section*/
+  .sib__aboutme__section .wrapper .info {
+    gap: 18px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .sib__aboutme__section .wrapper .info .item {
+    width: 100%;
+    gap: 5px;
+  }
+  .sib__aboutme__section .wrapper .info .item .number {
+    font-size: 40px;
+  }
+  .sib__aboutme__section .wrapper .info .item .number span {
+    font-size: 35px;
+  }
+  /*Skills Section*/
+  .sib__skills__section {
+    padding: 40px 0;
+  }
 }
 @media (min-width: 415px) and (max-width: 575px) {
+  section {
+    margin-top: 40px;
+  }
+  .sib__section__title {
+    margin-bottom: 20px;
+  }
   /*Logo*/
   .sb__logo {
     width: 120px;
@@ -97,8 +133,33 @@
     height: 100%;
     width: auto;
   }
+  /*About Me Section*/
+  .sib__aboutme__section .wrapper .info {
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .sib__aboutme__section .wrapper .info .item {
+    width: 47%;
+  }
+  .sib__aboutme__section .wrapper .info .item .number {
+    font-size: 40px;
+  }
+  .sib__aboutme__section .wrapper .info .item .number span {
+    font-size: 35px;
+  }
+  /*Skills Section*/
+  .sib__skills__section {
+    padding: 50px 0;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  section {
+    margin-top: 60px;
+  }
+  .sib__section__title {
+    margin-bottom: 25px;
+  }
   /*Logo*/
   .sb__logo {
     width: 150px;
@@ -138,8 +199,29 @@
     height: 100%;
     width: auto;
   }
+  /*About Me Section*/
+  .sib__aboutme__section .wrapper .info {
+    gap: 18px;
+    flex-direction: row;
+  }
+  .sib__aboutme__section .wrapper .info .item {
+    width: 31%;
+  }
+  .sib__aboutme__section .wrapper .info .item .number {
+    font-size: 45px;
+  }
+  .sib__aboutme__section .wrapper .info .item .number span {
+    font-size: 40px;
+  }
+  /*Skills Section*/
+  .sib__skills__section {
+    padding: 60px 0;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  section {
+    margin-top: 80px;
+  }
   /*Logo*/
   .sb__logo {
     width: 150px;
@@ -166,8 +248,19 @@
     margin-top: 25px;
     gap: 30px;
   }
+  /*About Me Section*/
+  .sib__aboutme__section .wrapper .info .item {
+    width: 100%;
+  }
+  /*Skills Section*/
+  .sib__skills__section {
+    padding: 70px 0;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  section {
+    margin-top: 90px;
+  }
   /*Header*/
   .sb__header .wrapper,
   .sb__header .wrapper nav {
@@ -195,8 +288,19 @@
     margin-top: 30px;
     gap: 30px;
   }
+  /*About Me Section*/
+  .sib__aboutme__section .wrapper .info .item {
+    width: 70%;
+  }
+  /*Skills Section*/
+  .sib__skills__section {
+    padding: 80px 0;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
+  section {
+    margin-top: 100px;
+  }
   /*Header*/
   .sb__header .wrapper,
   .sb__header .wrapper nav {
@@ -216,5 +320,13 @@
   }
   .sib__hero__section .content .cta__buttons {
     margin-top: 30px;
+  }
+  /*About Me Section*/
+  .sib__aboutme__section .wrapper .info .item {
+    width: 65%;
+  }
+  /*Skills Section*/
+  .sib__skills__section {
+    padding: 90px 0;
   }
 }/*# sourceMappingURL=responsive.css.map */

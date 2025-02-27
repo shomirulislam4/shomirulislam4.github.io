@@ -91,7 +91,6 @@ section {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            justify-content: space-around;
             gap: 40px;
 
             .item {
@@ -99,6 +98,7 @@ section {
                 flex-direction: column;
                 align-items: center;
                 gap: 10px;
+                width: 60%;
 
                 .number {
                     display: flex;
@@ -130,7 +130,72 @@ section {
 
 
 /*** Start of Skills Section Section ***/
+.sib__skills__section {
+    background: base.$cream;
+    padding: 100px 0;
+    position: relative;
 
+    .shape__2 {
+        clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px));
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        top: 0;
+    }
+    .shape__1 {
+        clip-path: polygon(0 0,100% 50px,100% 100%,0 100%);
+        margin-top: -40px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .skills {
+            display: flex;
+            gap: 20px;
+            height: 100%;
+            flex-wrap: wrap;
+
+            .skill__item {
+                flex: 1 1 calc(33.33% - 20px);
+                background: base.$white;
+                padding: 20px;
+                box-sizing: border-box;
+
+                .icon {
+                    font-size: 40px;
+                    color: base.$black;
+                    margin-bottom: 20px;
+                }
+
+                &:hover .icon {
+                    color: base.$SecondaryColor;
+
+                    .fa-sass {
+                        color: #CF649A;
+                    }
+
+                    .fa-react {
+                        color: #58C4DC;
+                    }
+
+                    .fa-wordpress-simple {
+                        color: #444140;
+                    }
+
+                    .fa-shopify {
+                        color: #98C14C;
+                    }
+                }
+            }
+        }
+    }
+}
 /*** End of Skills Section Section ***/
 
 /*** Start of a Section ***/
