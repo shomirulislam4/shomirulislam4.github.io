@@ -36,7 +36,7 @@
     .sib__hero__section {
         height: auto;
         .content {
-            padding-top: 20px;
+            padding-top: 30px;
             h3 {
                 font-size: 20px;
                 line-height: 120%;
@@ -61,17 +61,28 @@
         }
     }
     /*About Me Section*/
-    .sib__aboutme__section .wrapper .info {
-        gap: 18px;
-        flex-direction: row;
-        justify-content: center;
-        .item {
-            width: 100%;
-            gap: 5px;
-            .number {
-                font-size: 40px;
-                span {
-                    font-size: 35px;
+    .sib__aboutme__section {
+        .sectionbgshape.one {
+            height: 220px;
+            width: 220px;
+        }
+        .sectionbgshape.two {
+            top: 0;
+            height: 160px;
+            width: 160px;
+        }
+        .wrapper .info {
+            gap: 18px;
+            flex-direction: row;
+            justify-content: center;
+            .item {
+                width: 100%;
+                gap: 5px;
+                .number {
+                    font-size: 40px;
+                    span {
+                        font-size: 35px;
+                    }
                 }
             }
         }
@@ -79,6 +90,9 @@
     /*Skills Section*/
     .sib__skills__section {
         padding: 40px 0;
+        .wrapper {
+            flex-direction: column;
+        }
     }
 }
 
@@ -104,7 +118,7 @@
     .sib__hero__section {
         height: auto;
         .content {
-            padding-top: 20px;
+            padding-top: 30px;
             h3 {
                 font-size: 24px;
                 line-height: 120%;
@@ -135,23 +149,38 @@
         }
     }
     /*About Me Section*/
-    .sib__aboutme__section .wrapper .info {
-        gap: 15px;
-        flex-direction: row;
-        justify-content: center;
-        .item {
-            width: 47%;
-            .number {
-                font-size: 40px;
-                span {
-                    font-size: 35px;
+    .sib__aboutme__section {
+        .sectionbgshape.one {
+            height: 240px;
+            width: 240px;
+        }
+        .sectionbgshape.two {
+            top: 0;
+            height: 180px;
+            width: 180px;
+        }
+        .wrapper .info {
+            gap: 15px;
+            flex-direction: row;
+            justify-content: center;
+            .item {
+                width: 47%;
+                .number {
+                    font-size: 40px;
+                    span {
+                        font-size: 35px;
+                    }
                 }
             }
         }
     }
+
     /*Skills Section*/
     .sib__skills__section {
         padding: 50px 0;
+        .wrapper {
+            flex-direction: column;
+        }
     }
 }
 
@@ -202,15 +231,26 @@
         }
     }
     /*About Me Section*/
-    .sib__aboutme__section .wrapper .info {
-        gap: 18px;
-        flex-direction: row;
-        .item {
-            width: 31%;
-            .number {
-                font-size: 45px;
-                span {
-                    font-size: 40px;
+    .sib__aboutme__section {
+        .sectionbgshape.one {
+            height: 240px;
+            width: 240px;
+        }
+        .sectionbgshape.two {
+            top: 0;
+            height: 200px;
+            width: 200px;
+        }
+        .wrapper .info {
+            gap: 18px;
+            flex-direction: row;
+            .item {
+                width: 31%;
+                .number {
+                    font-size: 45px;
+                    span {
+                        font-size: 40px;
+                    }
                 }
             }
         }
@@ -254,8 +294,19 @@
         }
     }
     /*About Me Section*/
-    .sib__aboutme__section .wrapper .info .item {
-        width: 100%;
+    .sib__aboutme__section {
+        .sectionbgshape.one {
+            height: 280px;
+            width: 280px;
+        }
+        .sectionbgshape.two {
+            top: 0;
+            height: 240px;
+            width: 240px;
+        }
+        .wrapper .info .item {
+            width: 100%;
+        }
     }
     /*Skills Section*/
     .sib__skills__section {
@@ -297,8 +348,20 @@
         }
     }
     /*About Me Section*/
-    .sib__aboutme__section .wrapper .info .item {
-        width: 70%;
+    .sib__aboutme__section {
+        .sectionbgshape.one {
+            bottom: 5%;
+            height: 280px;
+            width: 280px;
+        }
+        .sectionbgshape.two {
+            top: 0;
+            height: 240px;
+            width: 240px;
+        }
+        .wrapper .info .item {
+            width: 70%;
+        }
     }
     /*Skills Section*/
     .sib__skills__section {
@@ -333,8 +396,18 @@
         }
     }
     /*About Me Section*/
-    .sib__aboutme__section .wrapper .info .item {
-        width: 65%;
+    .sib__aboutme__section {
+        .sectionbgshape.one {
+            bottom: 5%;
+        }
+        .sectionbgshape.two {
+            top: 0;
+            height: 280px;
+            width: 280px;
+        }
+        .wrapper .info .item {
+            width: 65%;
+        }
     }
     /*Skills Section*/
     .sib__skills__section {

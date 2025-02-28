@@ -645,6 +645,44 @@ a:hover {
   color: #00FF00;
 }
 
+/* Section Background */
+.sectionbgshape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #574B90;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  filter: blur(400px);
+  -webkit-filter: blur(400px);
+  z-index: -1;
+}
+
+/* Section Top & Bottom */
+.shape__1 {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #FFF;
+}
+
+.shape__2 {
+  -webkit-clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+  margin-top: -40px;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #FFF;
+}
+
 .sb__header {
   display: flex;
   align-items: center;
@@ -891,6 +929,16 @@ section {
 
 /*** End  of Hero Section ***/
 /*** Start of About Me Section ***/
+.sib__aboutme__section .sectionbgshape.one {
+  top: unset;
+  bottom: 10%;
+}
+.sib__aboutme__section .sectionbgshape.two {
+  left: unset;
+  right: 0;
+  top: -10%;
+  background: #00FF00;
+}
 .sib__aboutme__section .wrapper .about__me span {
   margin-bottom: 20px;
 }
@@ -1033,57 +1081,58 @@ section {
   padding: 100px 0;
   position: relative;
 }
-.sib__skills__section .shape__2 {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
-  width: 100%;
-  height: 40px;
-  position: absolute;
-  top: 0;
-}
-.sib__skills__section .shape__1 {
-  -webkit-clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
-  margin-top: -40px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
 .sib__skills__section .wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.sib__skills__section .wrapper .skills {
   display: flex;
   gap: 20px;
   height: 100%;
   flex-wrap: wrap;
 }
-.sib__skills__section .wrapper .skills .skill__item {
+.sib__skills__section .wrapper .skill__item {
   flex: 1 1 calc(33.33% - 20px);
   background: #FFF;
   padding: 20px;
   box-sizing: border-box;
+  position: relative;
+  transform-style: preserve-3d;
 }
-.sib__skills__section .wrapper .skills .skill__item .icon {
+.sib__skills__section .wrapper .skill__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0px;
+  background: conic-gradient(from 90deg at 40% -40%, #574B90, #00FF00);
+  filter: blur(10px);
+  transform: translate3d(0px, 0px, -1px);
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+.sib__skills__section .wrapper .skill__item:hover::before {
+  opacity: 1;
+}
+.sib__skills__section .wrapper .skill__item .icon {
   font-size: 40px;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.sib__skills__section .wrapper .skills .skill__item:hover .icon {
-  color: #00FF00;
+.sib__skills__section .wrapper .skill__item:hover .icon {
+  color: #574B90;
 }
-.sib__skills__section .wrapper .skills .skill__item:hover .icon .fa-sass {
+.sib__skills__section .wrapper .skill__item:hover .icon .fa-sass {
   color: #CF649A;
 }
-.sib__skills__section .wrapper .skills .skill__item:hover .icon .fa-react {
+.sib__skills__section .wrapper .skill__item:hover .icon .fa-react {
   color: #58C4DC;
 }
-.sib__skills__section .wrapper .skills .skill__item:hover .icon .fa-wordpress-simple {
+.sib__skills__section .wrapper .skill__item:hover .icon .fa-wordpress-simple {
   color: #444140;
 }
-.sib__skills__section .wrapper .skills .skill__item:hover .icon .fa-shopify {
+.sib__skills__section .wrapper .skill__item:hover .icon .fa-shopify {
   color: #98C14C;
 }
 
