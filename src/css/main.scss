@@ -79,9 +79,11 @@ section {
 
 /*** Start of About Me Section ***/
 .sib__aboutme__section {
+    z-index: 1;
+
     .sectionbgshape.one {
         top: unset;
-        bottom: 10%;
+        bottom: -10%;
     }
 
     .sectionbgshape.two {
@@ -146,6 +148,15 @@ section {
     background: base.$cream;
     padding: 100px 0;
     position: relative;
+    z-index: 0;
+
+    .sectionbgshape {
+        left: unset;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #58C4DC;
+    }
 
     .wrapper {
         display: flex;

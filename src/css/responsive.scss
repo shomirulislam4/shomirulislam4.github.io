@@ -9,6 +9,10 @@
             line-height: 50px;
         }
     }
+    .sectionbgshape {
+        height: 220px;
+        width: 220px;
+    }
     /*Logo*/
     .sb__logo {
         width: 120px;
@@ -62,10 +66,6 @@
     }
     /*About Me Section*/
     .sib__aboutme__section {
-        .sectionbgshape.one {
-            height: 220px;
-            width: 220px;
-        }
         .sectionbgshape.two {
             top: 0;
             height: 160px;
@@ -102,6 +102,10 @@
     }
     .sib__section__title {
         margin-bottom: 20px;
+    }
+    .sectionbgshape {
+        height: 240px;
+        width: 240px;
     }
     /*Logo*/
     .sb__logo {
@@ -149,11 +153,7 @@
         }
     }
     /*About Me Section*/
-    .sib__aboutme__section {
-        .sectionbgshape.one {
-            height: 240px;
-            width: 240px;
-        }
+    .sib__aboutme__section { 
         .sectionbgshape.two {
             top: 0;
             height: 180px;
@@ -187,6 +187,10 @@
 @media (min-width: 576px) and (max-width: 767px) {
     section {
         margin-top: 60px;
+    }
+    .sectionbgshape {
+        height: 240px;
+        width: 240px;
     }
     .sib__section__title {
         margin-bottom: 25px;
@@ -232,10 +236,6 @@
     }
     /*About Me Section*/
     .sib__aboutme__section {
-        .sectionbgshape.one {
-            height: 240px;
-            width: 240px;
-        }
         .sectionbgshape.two {
             top: 0;
             height: 200px;
@@ -264,6 +264,10 @@
 @media (min-width: 768px) and (max-width: 991px) {
     section {
         margin-top: 80px;
+    }
+    .sectionbgshape {
+        height: 280px;
+        width: 280px;
     }
     /*Logo*/
     .sb__logo {
@@ -295,10 +299,6 @@
     }
     /*About Me Section*/
     .sib__aboutme__section {
-        .sectionbgshape.one {
-            height: 280px;
-            width: 280px;
-        }
         .sectionbgshape.two {
             top: 0;
             height: 240px;
@@ -317,6 +317,10 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     section {
         margin-top: 90px;
+    }
+    .sectionbgshape {
+        height: 280px;
+        width: 280px;
     }
     /*Header*/
     .sb__header .wrapper,
@@ -349,11 +353,6 @@
     }
     /*About Me Section*/
     .sib__aboutme__section {
-        .sectionbgshape.one {
-            bottom: 5%;
-            height: 280px;
-            width: 280px;
-        }
         .sectionbgshape.two {
             top: 0;
             height: 240px;
@@ -397,9 +396,6 @@
     }
     /*About Me Section*/
     .sib__aboutme__section {
-        .sectionbgshape.one {
-            bottom: 5%;
-        }
         .sectionbgshape.two {
             top: 0;
             height: 280px;
