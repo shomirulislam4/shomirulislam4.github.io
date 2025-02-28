@@ -863,6 +863,10 @@ a:hover {
   }
 }
 /* Global */
+html {
+  scroll-behavior: smooth;
+}
+
 span {
   display: block;
 }
@@ -1091,6 +1095,8 @@ section {
   top: 50%;
   transform: translateY(-50%);
   background: #58C4DC;
+  filter: blur(400px);
+  -webkit-filter: blur(400px);
 }
 .sib__skills__section .wrapper {
   display: flex;
@@ -1147,9 +1153,16 @@ section {
   color: #98C14C;
 }
 
+@media (min-width: 1600px) {
+  .sib__skills__section .sectionbgshape {
+    height: 400px;
+    width: 400px;
+    right: -5%;
+  }
+}
 /*** End of Skills Section Section ***/
-/*** Start of a Section ***/
-/*** End of a Section ***/
+/*** Start of Portfolio Section ***/
+/*** End of Portfolio Section ***/
 /*** Start of a Section ***/
 /*** End of a Section ***/
 /*** Start of a Section ***/
