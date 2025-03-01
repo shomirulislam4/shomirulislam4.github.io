@@ -654,8 +654,8 @@ a:hover {
   border-radius: 50%;
   height: 300px;
   width: 300px;
-  filter: blur(400px);
-  -webkit-filter: blur(400px);
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
   z-index: -1;
 }
 
@@ -1095,8 +1095,6 @@ section {
   top: 50%;
   transform: translateY(-50%);
   background: #58C4DC;
-  filter: blur(400px);
-  -webkit-filter: blur(400px);
 }
 .sib__skills__section .wrapper {
   display: flex;
