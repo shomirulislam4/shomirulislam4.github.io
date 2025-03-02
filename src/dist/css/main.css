@@ -709,6 +709,16 @@ a:hover {
   color: #00FF00;
 }
 
+@keyframes animateWhenScroll {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
 /* Section Background */
 .sectionbgshape {
   position: absolute;
@@ -1435,16 +1445,6 @@ section {
   bottom: 0;
 }
 
-@keyframes animateWhenScroll {
-  from {
-    opacity: 0;
-    scale: 0.5;
-  }
-  to {
-    opacity: 1;
-    scale: 1;
-  }
-}
 /*** End of Portfolio Section ***/
 /*** Start of a Section ***/
 /*** End of a Section ***/
