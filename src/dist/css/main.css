@@ -1160,6 +1160,10 @@ section {
 }
 /*** End of Skills Section Section ***/
 /*** Start of Portfolio Section ***/
+.sib__portfolio__section .wrapper {
+  color: black;
+}
+
 /*** End of Portfolio Section ***/
 /*** Start of a Section ***/
 /*** End of a Section ***/
