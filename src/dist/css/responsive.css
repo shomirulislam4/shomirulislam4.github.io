@@ -9,6 +9,10 @@
     font-size: 34px;
     line-height: 50px;
   }
+  .sib__section__title .desc {
+    width: 100%;
+    margin-top: 10px;
+  }
   .sectionbgshape {
     height: 220px;
     width: 220px;
@@ -92,6 +96,26 @@
   .sib__skills__section .wrapper {
     flex-direction: column;
   }
+  /*Portfolio Section*/
+  .sib__portfolio__section .sib__portfolio__item .holder .content {
+    padding: 15px;
+  }
+  .sib__portfolio__section .sib__portfolio__item .holder .content .tags {
+    gap: 5px;
+  }
+  .sib__portfolio__section .sib__portfolio__item .holder .content .specs, .sib__portfolio__section .sib__portfolio__item .holder .content .title {
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .sib__portfolio__section .sib__portfolio__item .holder .content .cta__btns {
+    gap: 10px;
+  }
+  .sib__portfolio__section .sib__portfolio__item .holder .content .cta__btns .button__two {
+    padding: 6px 13px;
+  }
 }
 @media (min-width: 415px) and (max-width: 575px) {
   section {
@@ -99,6 +123,9 @@
   }
   .sib__section__title {
     margin-bottom: 20px;
+  }
+  .sib__section__title .desc {
+    width: 100%;
   }
   .sectionbgshape {
     height: 240px;
@@ -188,6 +215,9 @@
   .sib__section__title {
     margin-bottom: 25px;
   }
+  .sib__section__title .desc {
+    width: 100%;
+  }
   /*Logo*/
   .sb__logo {
     width: 150px;
@@ -259,6 +289,9 @@
     height: 280px;
     width: 280px;
   }
+  .sib__section__title .desc {
+    width: 75%;
+  }
   /*Logo*/
   .sb__logo {
     width: 150px;
@@ -298,6 +331,14 @@
   .sib__skills__section {
     padding: 70px 0;
   }
+  /*Portfolio Section*/
+  .sib__portfolio__section .sib__portfolio__item .holder .content .specs {
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   section {
@@ -306,6 +347,9 @@
   .sectionbgshape {
     height: 280px;
     width: 280px;
+  }
+  .sib__section__title .desc {
+    width: 60%;
   }
   /*Header*/
   .sb__header .wrapper,

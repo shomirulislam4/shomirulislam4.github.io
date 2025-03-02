@@ -243,8 +243,8 @@ section {
 
 /*** Start of Portfolio Section ***/
 .sib__portfolio__section .sib__portfolio__item {
-    height: 500px;
     width: 100%;
+    aspect-ratio: 3 / 2.37;
     position: relative;
     animation: animateWhenScroll linear;
     animation-timeline: view();
@@ -275,11 +275,6 @@ section {
     img {
         height: 100%;
         width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
     }
 
     .holder {
@@ -309,6 +304,7 @@ section {
 
             .tags {
                 display: flex;
+                flex-wrap: wrap;
                 gap: 10px;
                 margin-bottom: 0;
 

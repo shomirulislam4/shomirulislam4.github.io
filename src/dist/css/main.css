@@ -1242,8 +1242,8 @@ section {
 /*** End of Skills Section Section ***/
 /*** Start of Portfolio Section ***/
 .sib__portfolio__section .sib__portfolio__item {
-  height: 500px;
   width: 100%;
+  aspect-ratio: 3/2.37;
   position: relative;
   animation: animateWhenScroll linear;
   animation-timeline: view();
@@ -1280,11 +1280,6 @@ section {
 .sib__portfolio__section .sib__portfolio__item img {
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
 }
 .sib__portfolio__section .sib__portfolio__item .holder {
   height: 100%;
@@ -1318,6 +1313,7 @@ section {
 }
 .sib__portfolio__section .sib__portfolio__item .holder .content .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 0;
 }
