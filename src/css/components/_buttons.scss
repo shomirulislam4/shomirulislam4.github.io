@@ -21,6 +21,8 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    width: fit-content;
+    gap: 10px;
 
     &:disabled {
         cursor: default;
@@ -86,6 +88,8 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    width: fit-content;
+    gap: 10px;
 
     &:disabled {
         cursor: default;
@@ -151,6 +155,8 @@
     border: 1px solid base.$black;
     display: flex;
     align-items: center;
+    width: fit-content;
+    gap: 10px;
 
     &:disabled {
         cursor: default;
