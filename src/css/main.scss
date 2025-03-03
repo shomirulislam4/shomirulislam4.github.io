@@ -246,9 +246,6 @@ section {
     width: 100%;
     aspect-ratio: 3 / 2.37;
     position: relative;
-    animation: animateWhenScroll linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 30%;
     border: 1px solid #EEE;
     @include utils.transition-03s;
     transform-style: preserve-3d;
