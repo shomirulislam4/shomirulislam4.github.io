@@ -50,6 +50,28 @@
             gap: 40px;
             margin-top: 50px;
         }
+
+        .sib__social__networks {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            a {
+                @include base.medium__text;
+                height: 40px;
+                width: 40px;
+                line-height: 40px !important;
+                text-align: center;
+                background: base.$black;
+                color: base.$white;
+
+                &:hover {
+                    background: base.$SecondaryColor;
+                    color: base.$black;
+                }
+            }
+        }
     }
 
     .image {
