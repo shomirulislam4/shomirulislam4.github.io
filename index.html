@@ -575,9 +575,8 @@
             <div class="left__side">
                 <form method="POST" action="https://api.web3forms.com/submit" id="SIBContactMeForm">
                     <input type="hidden" name="access_key" value="7f8a7c07-c18b-4a0a-b2aa-800b2ba512cd">
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                    <input type="hidden" name="redirect" value="https://shomirulislam4.github.io/form-submitted.html">
-
+                    <input type="hidden" name="from_name" value="SB Portfolio Form Submitted">
+                    
                     <div class="with__label">
                         <label for="name">Full Name</label>
                         <input type="text" name="name" id="name" required>
@@ -594,6 +593,10 @@
                         <label for="message">Your Message</label>
                         <textarea name="message" id="message" required></textarea>
                     </div>
+
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="redirect" value="https://shomirulislam4.github.io/form-submitted.html">
+
                     <button type="submit" class="button__two">Send Message</button>
                 </form>
             </div>
