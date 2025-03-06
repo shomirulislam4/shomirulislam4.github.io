@@ -585,7 +585,7 @@ a {
   z-index: -10;
 }
 .button__one:hover:before {
-  height: 400%;
+  height: 500%;
 }
 
 .button__one [hidden] {
@@ -697,7 +697,7 @@ a {
   z-index: -10;
 }
 .button__two:hover:before {
-  height: 400%;
+  height: 500%;
 }
 
 .button__two [hidden] {
@@ -810,7 +810,7 @@ a {
   z-index: -10;
 }
 .button__three:hover:before {
-  height: 400%;
+  height: 500%;
 }
 
 .button__three [hidden] {
@@ -2247,5 +2247,24 @@ form textarea {
 /*** End of Contact Me Section ***/
 /*** Start of Footer Section ***/
 /*** End of Footer Section ***/
-/*** Start of a Section ***/
-/*** End of a Section ***//*# sourceMappingURL=main.css.map */
+/*** Start of Thank You Section ***/
+.sib__thank__you .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+.sib__thank__you .wrapper h1, .sib__thank__you .wrapper p, .sib__thank__you .wrapper h5, .sib__thank__you .wrapper h1 a {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+}
+.sib__thank__you .wrapper h5 {
+  margin-bottom: 0;
+}
+.sib__thank__you .wrapper .btns {
+  display: flex;
+  gap: 20px;
+}
+
+/*** End of Thank You Section ***//*# sourceMappingURL=main.css.map */

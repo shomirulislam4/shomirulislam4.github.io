@@ -515,5 +515,30 @@
 }
 /*** End of Footer Section ***/
 
-/*** Start of a Section ***/
-/*** End of a Section ***/
+/*** Start of Thank You Section ***/
+.sib__thank__you {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+
+        h1, p, h5, h1 a {
+            font-family: 'Anonymous Pro', monospace;
+            font-weight: 700;
+        }
+
+        h5 {
+            margin-bottom: 0;
+        }
+
+        .btns {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+/*** End of Thank You Section ***/
+
+
