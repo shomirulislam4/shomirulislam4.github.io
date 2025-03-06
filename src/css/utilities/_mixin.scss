@@ -1,4 +1,4 @@
-@use '../base/index' as base;
+@use '../base/colors' as base;
 
 @mixin drop__shadow {
     box-shadow: 0 0 20px 0 rgba($color: base.$black, $alpha: 0.4);

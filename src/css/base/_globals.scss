@@ -1,3 +1,5 @@
+@use '../utilities/index' as utils;
+
 html {
     scroll-behavior: smooth;
 }
@@ -8,4 +10,8 @@ span {
 
 section {
     margin-top: 120px;
+}
+
+a {
+    @include utils.transition-03s;
 }

@@ -1,7 +1,9 @@
 @use '../base/index' as base;
+@use '../utilities/index' as utils;
 
 //Button 1
 .button__one {
+    all: unset;
     -webkit-tap-highlight-color: transparent;
     -webkit-mask-image: -webkit-radial-gradient(base.$black, base.$cream);
     background: base.$black;
@@ -23,6 +25,7 @@
     align-items: center;
     width: fit-content;
     gap: 10px;
+    @include utils.transition-03s;
 
     &:disabled {
         cursor: default;
@@ -70,6 +73,7 @@
 
 //Button 2
 .button__two {
+    all: unset;
     -webkit-tap-highlight-color: transparent;
     -webkit-mask-image: -webkit-radial-gradient(base.$black, base.$cream);
     background: base.$black;
@@ -90,6 +94,7 @@
     align-items: center;
     width: fit-content;
     gap: 10px;
+    @include utils.transition-03s;
 
     &:disabled {
         cursor: default;
@@ -136,6 +141,7 @@
 
 //Button 3
 .button__three {
+    all: unset;
     -webkit-tap-highlight-color: transparent;
     -webkit-mask-image: -webkit-radial-gradient(base.$black, base.$cream);
     background: base.$cream;
@@ -157,6 +163,7 @@
     align-items: center;
     width: fit-content;
     gap: 10px;
+    @include utils.transition-03s;
 
     &:disabled {
         cursor: default;
@@ -199,34 +206,4 @@
 
 .button__three [hidden] {
   display: none;
-}
-
-@-webkit-keyframes move-up-alternate {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(80%);
-    }
-    51% {
-        transform: translateY(-80%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes move-up-alternate {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(80%);
-    }
-    51% {
-        transform: translateY(-80%);
-    }
-    to {
-        transform: translateY(0);
-    }
 }
