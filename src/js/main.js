@@ -48,3 +48,8 @@ $(function() {
         });
     }
 });
+
+/* Form Reset */
+window.onload = function() {
+    document.getElementById("SIBContactMeForm").reset();
+};

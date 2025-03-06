@@ -573,23 +573,26 @@
         </div>
         <div class="container wrapper">
             <div class="left__side">
-                <form method="POST" action="https://api.web3forms.com/submit">
+                <form method="POST" action="https://api.web3forms.com/submit" id="SIBContactMeForm">
                     <input type="hidden" name="access_key" value="7f8a7c07-c18b-4a0a-b2aa-800b2ba512cd">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="redirect" value="https://shomirulislam4.github.io/form-submitted.html">
+
                     <div class="with__label">
-                        <label for="SIBContactMeName">Full Name</label>
-                        <input type="text" name="SIBContactMe" id="SIBContactMeName" required>
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" required>
                     </div>
                     <div class="with__label">
-                        <label for="SIBContactMeEmail">Email Address</label>
-                        <input type="email" name="SIBContactMe" id="SIBContactMeEmail" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div class="with__label">
-                        <label for="SIBContactMeSub">Subject (optional)</label>
-                        <input type="text" name="SIBContactMe" id="SIBContactMeSub">
+                        <label for="subject">Subject (optional)</label>
+                        <input type="text" name="subject" id="subject">
                     </div>
                     <div class="with__label">
-                        <label for="SIBContactMeMessage">Your Message</label>
-                        <textarea name="SIBContactMe" id="SIBContactMeMessage" required></textarea>
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" required></textarea>
                     </div>
                     <button type="submit" class="button__two">Send Message</button>
                 </form>
