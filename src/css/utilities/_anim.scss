@@ -56,6 +56,7 @@
     transform: translateX(0);
 }
 
+/*** Start of Testimonials Section Anim ***/
 /* Slide Top to Bottom */
 @keyframes scrolltoTop {
     to {
@@ -67,5 +68,32 @@
 @keyframes scrolltoBottom {
     to {
       bottom: -250px;
+    }
+}
+/*** End of Testimonials Section Anim ***/
+
+/* Top to Bottom Anim */
+@keyframes ToptoBottomAnim {
+    0% {
+        transform: translateY(0) translateX(40%);
+    }
+    50% {
+        transform: translateY(100%) translateX(0);
+    }
+    100% {
+        transform: translateY(0) translateX(40%);
+    }
+}
+
+/* Bottom to Top Anim */
+@keyframes BottomtoTopAnim {
+    0% {
+        transform: translateY(100%) translateX(0);
+    }
+    50% {
+        transform: translateY(0) translateX(40%);
+    }
+    100% {
+        transform: translateY(100%) translateX(0);
     }
 }

@@ -446,6 +446,7 @@ a:hover {
   transform: translateX(0);
 }
 
+/*** Start of Testimonials Section Anim ***/
 /* Slide Top to Bottom */
 @keyframes scrolltoTop {
   to {
@@ -456,6 +457,31 @@ a:hover {
 @keyframes scrolltoBottom {
   to {
     bottom: -250px;
+  }
+}
+/*** End of Testimonials Section Anim ***/
+/* Top to Bottom Anim */
+@keyframes ToptoBottomAnim {
+  0% {
+    transform: translateY(0) translateX(40%);
+  }
+  50% {
+    transform: translateY(100%) translateX(0);
+  }
+  100% {
+    transform: translateY(0) translateX(40%);
+  }
+}
+/* Bottom to Top Anim */
+@keyframes BottomtoTopAnim {
+  0% {
+    transform: translateY(100%) translateX(0);
+  }
+  50% {
+    transform: translateY(0) translateX(40%);
+  }
+  100% {
+    transform: translateY(100%) translateX(0);
   }
 }
 html {
@@ -2151,6 +2177,15 @@ form textarea {
 
 /*** End of Testimonials Section ***/
 /*** Start of Contact Me Section ***/
+.sib__contactme__section .sectionbgshape.one {
+  animation: ToptoBottomAnim 30s linear infinite;
+}
+.sib__contactme__section .sectionbgshape.two {
+  animation: BottomtoTopAnim 30s linear infinite;
+  background: #00FF00;
+  left: unset;
+  right: 10%;
+}
 .sib__contactme__section .wrapper {
   display: flex;
   gap: 40px;
@@ -2248,6 +2283,24 @@ form textarea {
 /*** Start of Footer Section ***/
 /*** End of Footer Section ***/
 /*** Start of Thank You Section ***/
+.sib__thank__you {
+  overflow: hidden;
+  height: 100dvh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.sib__thank__you .sectionbgshape.one {
+  animation: ToptoBottomAnim 30s linear infinite;
+  height: 400px;
+  width: 400px;
+}
+.sib__thank__you .sectionbgshape.two {
+  animation: BottomtoTopAnim 30s linear infinite;
+  background: #00FF00;
+  left: unset;
+  right: 10%;
+}
 .sib__thank__you .wrapper {
   display: flex;
   flex-direction: column;
@@ -2258,6 +2311,9 @@ form textarea {
 .sib__thank__you .wrapper h1, .sib__thank__you .wrapper p, .sib__thank__you .wrapper h5, .sib__thank__you .wrapper h1 a {
   font-family: "Anonymous Pro", monospace;
   font-weight: 700;
+}
+.sib__thank__you .wrapper p {
+  color: #FF0000;
 }
 .sib__thank__you .wrapper h5 {
   margin-bottom: 0;

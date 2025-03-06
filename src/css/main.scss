@@ -452,58 +452,71 @@
 /*** End of Testimonials Section ***/
 
 /*** Start of Contact Me Section ***/
-.sib__contactme__section .wrapper {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    .left__side {
-        width: 65%;
-        flex-shrink: 0;
-        flex-grow: 0;
-
-        form {
-            label {
-                font-family: 'Anonymous Pro', monospace;
-                font-weight: 700;
-            }
-
-            button {
-                margin-top: 20px;
-            }
-        }
+.sib__contactme__section {
+    .sectionbgshape.one {
+        animation: ToptoBottomAnim 30s linear infinite;
     }
 
-    .right__side {
-        width: 30%;
+    .sectionbgshape.two {
+        animation: BottomtoTopAnim 30s linear infinite;
+        background: base.$SecondaryColor;
+        left: unset;
+        right: 10%;
+    }
+
+    .wrapper {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: base.$PrimaryColor;
-        padding: 30px;
-        flex-shrink: 0;
-        flex-grow: 0;
-        height: 100%;
-
-        h3, span, span a {
-            font-family: 'Anonymous Pro', monospace;
-            font-weight: 700;
-            color: base.$white;
-        }
-
-        span {
-            margin-bottom: 10px;
-            @include base.medium__text;
-
-            svg {
-                height: 14px;
-                width: 14px;
+        gap: 40px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        .left__side {
+            width: 65%;
+            flex-shrink: 0;
+            flex-grow: 0;
+    
+            form {
+                label {
+                    font-family: 'Anonymous Pro', monospace;
+                    font-weight: 700;
+                }
+    
+                button {
+                    margin-top: 20px;
+                }
             }
         }
-
-        span a:hover {
-            color: base.$SecondaryColor;
+    
+        .right__side {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: base.$PrimaryColor;
+            padding: 30px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            height: 100%;
+    
+            h3, span, span a {
+                font-family: 'Anonymous Pro', monospace;
+                font-weight: 700;
+                color: base.$white;
+            }
+    
+            span {
+                margin-bottom: 10px;
+                @include base.medium__text;
+    
+                svg {
+                    height: 14px;
+                    width: 14px;
+                }
+            }
+    
+            span a:hover {
+                color: base.$SecondaryColor;
+            }
         }
     }
 }
@@ -517,6 +530,25 @@
 
 /*** Start of Thank You Section ***/
 .sib__thank__you {
+    overflow: hidden;
+    height: 100dvh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    .sectionbgshape.one {
+        animation: ToptoBottomAnim 30s linear infinite;
+        height: 400px;
+        width: 400px;
+    }
+
+    .sectionbgshape.two {
+        animation: BottomtoTopAnim 30s linear infinite;
+        background: base.$SecondaryColor;
+        left: unset;
+        right: 10%;
+    }
+
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -527,6 +559,10 @@
         h1, p, h5, h1 a {
             font-family: 'Anonymous Pro', monospace;
             font-weight: 700;
+        }
+
+        p {
+            color: base.$red;
         }
 
         h5 {
