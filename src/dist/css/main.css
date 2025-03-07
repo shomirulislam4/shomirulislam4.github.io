@@ -2100,7 +2100,7 @@ form textarea {
   }
 }
 .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item .review {
-  height: 100px;
+  flex: auto;
   overflow-y: auto;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
@@ -2281,6 +2281,36 @@ form textarea {
 
 /*** End of Contact Me Section ***/
 /*** Start of Footer Section ***/
+.sib__footer__section {
+  background: #F9F9F9;
+}
+.sib__footer__section .sb__logo {
+  margin-bottom: 10px;
+}
+.sib__footer__section .footer__widgets h6 {
+  text-transform: capitalize;
+}
+.sib__footer__section .footer__widgets ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sib__footer__section .footer__widgets ul li {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.sib__footer__section .footer__widgets ul li a {
+  display: block;
+  color: #000000;
+}
+.sib__footer__section .footer__widgets ul li a:hover {
+  color: #00FF00;
+}
+.sib__footer__section .bottom .right a {
+  text-align: right;
+  display: block;
+}
+
 /*** End of Footer Section ***/
 /*** Start of Thank You Section ***/
 .sib__thank__you {

@@ -411,7 +411,7 @@
             }
 
             .review {
-                height: 100px;
+                flex: auto;
                 overflow-y: auto;
                 @include base.small__text;
 
@@ -524,7 +524,40 @@
 
 /*** Start of Footer Section ***/
 .sib__footer__section {
+    background: base.$cream;
 
+    .sb__logo {
+        margin-bottom: 10px;
+    }
+    .footer__widgets {
+        h6 {
+            text-transform: capitalize;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                text-transform: capitalize;
+                margin-bottom: 10px;
+
+                a {
+                    display: block;
+                    color: base.$black;
+
+                    &:hover {
+                        color: base.$SecondaryColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom .right a {
+        text-align: right;
+        display: block;
+    }
 }
 /*** End of Footer Section ***/
 
