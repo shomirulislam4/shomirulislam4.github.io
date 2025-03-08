@@ -911,6 +911,7 @@ form input {
   background: #FFF;
   color: #000000;
   padding: 0 20px;
+  font-weight: 600;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
   form input {
@@ -959,6 +960,12 @@ form input {
     font-size: 16px;
     line-height: 24px;
   }
+}
+form input:focus {
+  outline: 0;
+}
+form input:user-invalid {
+  border-color: #FF0000;
 }
 form textarea {
   height: 200px;
@@ -968,6 +975,7 @@ form textarea {
   color: #000000;
   padding: 10px 20px;
   resize: none;
+  font-weight: 600;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
   form textarea {
@@ -1016,6 +1024,12 @@ form textarea {
     font-size: 16px;
     line-height: 24px;
   }
+}
+form textarea:focus {
+  outline: 0;
+}
+form textarea:user-invalid {
+  border-color: #FF0000;
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -2306,11 +2320,77 @@ form textarea {
 .sib__footer__section .footer__widgets ul li a:hover {
   color: #00FF00;
 }
+.sib__footer__section .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.sib__footer__section .bottom .left, .sib__footer__section .bottom .right {
+  width: 50%;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .sib__footer__section .bottom span, .sib__footer__section .bottom a {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .sib__footer__section .bottom span, .sib__footer__section .bottom a {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .sib__footer__section .bottom span, .sib__footer__section .bottom a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .sib__footer__section .bottom span, .sib__footer__section .bottom a {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .sib__footer__section .bottom span, .sib__footer__section .bottom a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .sib__footer__section .bottom span, .sib__footer__section .bottom a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .sib__footer__section .bottom span, .sib__footer__section .bottom a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .sib__footer__section .bottom span, .sib__footer__section .bottom a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 .sib__footer__section .bottom .right a {
   text-align: right;
   display: block;
 }
 
+@media (max-width: 414px) {
+  .sib__footer__section .bottom {
+    flex-direction: column;
+  }
+  .sib__footer__section .bottom .left, .sib__footer__section .bottom .right {
+    width: 100%;
+  }
+  .sib__footer__section .bottom span, .sib__footer__section .bottom .right a {
+    text-align: center;
+  }
+}
 /*** End of Footer Section ***/
 /*** Start of Thank You Section ***/
 .sib__thank__you {

@@ -145,6 +145,33 @@
     animation-name: scrolltoBottom;
   }
   /*Contact Me Section*/
+  @keyframes ToptoBottomAnim {
+    0% {
+      transform: translateY(0) translateX(20%);
+    }
+    50% {
+      transform: translateY(100%) translateX(0);
+    }
+    100% {
+      transform: translateY(0) translateX(20%);
+    }
+  }
+  @keyframes BottomtoTopAnim {
+    0% {
+      transform: translateY(100%) translateX(0);
+    }
+    50% {
+      transform: translateY(0) translateX(20%);
+    }
+    100% {
+      transform: translateY(100%) translateX(0);
+    }
+  }
+  .sib__contactme__section .sectionbgshape.two {
+    height: 170px;
+    width: 170px;
+    right: 20%;
+  }
   .sib__contactme__section .wrapper {
     flex-direction: column;
     gap: 20px;
@@ -251,6 +278,9 @@
     flex-direction: column;
   }
   /*Testimonials Section*/
+  .sib__testimonials__section .wrapper {
+    gap: 10px;
+  }
   @keyframes scrolltoBottom {
     to {
       bottom: -190px;
@@ -270,6 +300,10 @@
     animation-name: scrolltoBottom;
   }
   /*Contact Me Section*/
+  .sib__contactme__section .sectionbgshape.two {
+    height: 190px;
+    width: 190px;
+  }
   .sib__contactme__section .wrapper {
     flex-direction: column;
     gap: 30px;
@@ -366,6 +400,9 @@
     padding: 60px 0;
   }
   /*Testimonials Section*/
+  .sib__testimonials__section .wrapper {
+    gap: 15px;
+  }
   @keyframes scrolltoBottom {
     to {
       bottom: -190px;
@@ -476,10 +513,10 @@
     height: 230px;
   }
   .sib__testimonials__section .wrapper .sib__testimonials__col.one .testimonials__item {
-    bottom: max(760px, 100%);
+    bottom: max(772px, 100%);
   }
   .sib__testimonials__section .wrapper .sib__testimonials__col.two .testimonials__item {
-    top: max(760px, 100%);
+    top: max(772px, 100%);
   }
   .sib__testimonials__section .wrapper .sib__testimonials__col.three {
     display: none;
@@ -621,6 +658,22 @@
     padding: 90px 0;
   }
   /*Testimonials Section*/
+  @keyframes scrolltoTop {
+    to {
+      top: -210px;
+    }
+  }
+  @keyframes scrolltoBottom {
+    to {
+      bottom: -210px;
+    }
+  }
+  .sib__testimonials__section .wrapper .sib__testimonials__col.one .testimonials__item, .sib__testimonials__section .wrapper .sib__testimonials__col.three .testimonials__item {
+    bottom: max(720px, 100%);
+  }
+  .sib__testimonials__section .wrapper .sib__testimonials__col.two .testimonials__item {
+    top: max(720px, 100%);
+  }
   .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item {
     padding: 10px;
     height: 210px;

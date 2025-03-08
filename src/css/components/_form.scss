@@ -25,6 +25,15 @@ form {
         background: base.$white;
         color: base.$black;
         padding: 0 20px;
+        font-weight: 600;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &:user-invalid {
+            border-color: base.$red;
+        }
     }
 
     textarea {
@@ -36,6 +45,15 @@ form {
         color: base.$black;
         padding: 10px 20px;
         resize: none;
+        font-weight: 600;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &:user-invalid {
+            border-color: base.$red;
+        }
     }
 }
 

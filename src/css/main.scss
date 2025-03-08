@@ -554,9 +554,36 @@
         }
     }
 
-    .bottom .right a {
-        text-align: right;
-        display: block;
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+
+        .left, .right {
+            width: 50%;
+        }
+
+        span, a {
+            @include base.medium__text;
+        }
+
+        .right a {
+            text-align: right;
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .sib__footer__section .bottom {
+        flex-direction: column;
+
+        .left, .right {
+            width: 100%;
+        }
+
+        span, .right a {
+            text-align: center;
+        }
     }
 }
 /*** End of Footer Section ***/

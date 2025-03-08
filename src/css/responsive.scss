@@ -151,21 +151,50 @@
         }
     }
     /*Contact Me Section*/
-    .sib__contactme__section .wrapper {
-        flex-direction: column;
-        gap: 20px;
-        .left__side {
-            width: 100%;
-            form button {
-                margin-top: 5px;
+    .sib__contactme__section {
+        @keyframes ToptoBottomAnim {
+            0% {
+                transform: translateY(0) translateX(20%);
+            }
+            50% {
+                transform: translateY(100%) translateX(0);
+            }
+            100% {
+                transform: translateY(0) translateX(20%);
             }
         }
-        .right__side {
-            width: 100%;
-            padding: 15px;
-            span svg {
-                height: 12px;
-                width: 12px;
+        @keyframes BottomtoTopAnim {
+            0% {
+                transform: translateY(100%) translateX(0);
+            }
+            50% {
+                transform: translateY(0) translateX(20%);
+            }
+            100% {
+                transform: translateY(100%) translateX(0);
+            }
+        }
+        .sectionbgshape.two {
+            height: 170px;
+            width: 170px;
+            right: 20%;
+        }
+        .wrapper {
+            flex-direction: column;
+            gap: 20px;
+            .left__side {
+                width: 100%;
+                form button {
+                    margin-top: 5px;
+                }
+            }
+            .right__side {
+                width: 100%;
+                padding: 15px;
+                span svg {
+                    height: 12px;
+                    width: 12px;
+                }
             }
         }
     }
@@ -266,6 +295,7 @@
             bottom: -190px;
             }
         }
+        gap: 10px;
         .sib__testimonials__col {
             height: 210px;
             width: 100%;
@@ -283,21 +313,27 @@
         }
     }
     /*Contact Me Section*/
-    .sib__contactme__section .wrapper {
-        flex-direction: column;
-        gap: 30px;
-        .left__side {
-            width: 100%;
-            form button {
-                margin-top: 10px;
-            }
+    .sib__contactme__section {
+        .sectionbgshape.two {
+            height: 190px;
+            width: 190px;
         }
-        .right__side {
-            width: 100%;
-            padding: 20px;
-            span svg {
-                height: 12px;
-                width: 12px;
+        .wrapper {
+            flex-direction: column;
+            gap: 30px;
+            .left__side {
+                width: 100%;
+                form button {
+                    margin-top: 10px;
+                }
+            }
+            .right__side {
+                width: 100%;
+                padding: 20px;
+                span svg {
+                    height: 12px;
+                    width: 12px;
+                }
             }
         }
     }
@@ -388,6 +424,7 @@
             bottom: -190px;
             }
         }
+        gap: 15px;
         .sib__testimonials__col {
             height: 210px;
             width: 100%;
@@ -501,10 +538,10 @@
                 height: 230px;
             }
             &.one .testimonials__item {
-                bottom: max(calc(190px * 4), 100%);
+                bottom: max(calc(193px * 4), 100%);
             }
             &.two .testimonials__item {
-                top: max(calc(190px * 4), 100%);
+                top: max(calc(193px * 4), 100%);
             }
             &.three {
                 display: none;
@@ -666,12 +703,33 @@
         padding: 90px 0;
     }
     /*Testimonials Section*/
-    .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item {
-        padding: 10px;
-        height: 210px;
-        .top .author img {
-            width: 40px;
-            height: 40px;
+    .sib__testimonials__section {
+        @keyframes scrolltoTop {
+            to {
+              top: -210px;
+            }
+        }
+        @keyframes scrolltoBottom {
+            to {
+              bottom: -210px;
+            }
+        }
+        .wrapper .sib__testimonials__col {
+            &.one .testimonials__item,
+            &.three .testimonials__item {
+                bottom: max(calc(180px * 4), 100%);
+            }
+            &.two .testimonials__item {
+                top: max(calc(180px * 4), 100%);
+            }
+            .testimonials__item {
+                padding: 10px;
+                height: 210px;
+                .top .author img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
         }
     }
     /*Contact Me Section*/
