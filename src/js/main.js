@@ -1,4 +1,46 @@
-/* Main Menu Toggle */
+/* Auto Nav Link Select */
+$(function() {
+  var $navigationLinks = $('.sb__header a');
+  var $sections = $('section');
+  
+  function getCurrentSection(scrolled) {
+    var currentSection;
+    $sections.each(function() {
+      var sectionTop = $(this).offset().top - 5;
+      if (scrolled >= sectionTop) {
+        currentSection = $(this);
+      }
+    });
+    return currentSection;
+  }
+  
+  function updateActiveClass() {
+    var scrolled = $(window).scrollTop();
+    var currentSection = getCurrentSection(scrolled);
+    
+    $navigationLinks.removeClass('active');
+    
+    $('.sb__header a[href="#' + currentSection.attr('id') + '"]').addClass('active');
+  }
+  
+  $(window).on('scroll', function() {
+    updateActiveClass();
+  });
+  
+  $('.sb__header a').on('click', function(e) {
+    e.preventDefault();
+    var targetId = $(this).attr('href');
+    var $targetSection = $(targetId);
+    
+    $('html, body').animate({
+      scrollTop: $targetSection.offset().top
+    }, 400);
+  });
+});
+
+
+
+/* Mobile Menu Toggle */
 $(function(){
     $('.sib__main__menu').on('click', function(){
         $('.sb__header .wrapper').addClass('show');

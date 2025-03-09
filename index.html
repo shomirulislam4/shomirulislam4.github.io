@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="src/dist/css/responsive.css">
 </head>
 <body>
-
     <header>
         <div class="container sb__header">
             <a href="index.html" class="sb__logo">{ SB }</a>
@@ -31,6 +30,7 @@
                     <a href="#skills">Skills</a>
                     <a href="#portfolio">Portfolio</a>
                     <a href="#testimonials">Testimonials</a>
+                    <a href="#blog">Blog</a>
                 </nav>
                 <a href="#contactme" class="button__one">Hire Me</a>
                 <button class="sib__mainmenu__close button__three">
@@ -573,19 +573,19 @@
                     <input type="hidden" name="access_key" value="7f8a7c07-c18b-4a0a-b2aa-800b2ba512cd">
                     <input type="hidden" name="from_name" value="SB Portfolio Form Submitted">
                     
-                    <div class="with__label">
+                    <div class="with__label slidein__anim__hide">
                         <label for="name">Full Name</label>
                         <input type="text" name="name" id="name" required>
                     </div>
-                    <div class="with__label">
+                    <div class="with__label slidein__anim__hide">
                         <label for="email">Email Address</label>
                         <input type="email" name="email" id="email" required>
                     </div>
-                    <div class="with__label">
+                    <div class="with__label slidein__anim__hide">
                         <label for="subject">Subject (optional)</label>
                         <input type="text" name="subject" id="subject">
                     </div>
-                    <div class="with__label">
+                    <div class="with__label slidein__anim__hide">
                         <label for="message">Your Message</label>
                         <textarea name="message" id="message" required></textarea>
                     </div>
@@ -596,7 +596,7 @@
                     <button type="submit" class="button__two">Send Message</button>
                 </form>
             </div>
-            <div class="right__side">
+            <div class="right__side blur__anim__hide">
                 <h3>Info</h3>
                 <span><i class="fa-solid fa-envelope"></i> <a href="mailto:shomirulislam0@gmail.com">shomirulislam0@gmail.com</a></span>
                 <span><i class="fa-solid fa-location-dot"></i> Boilla Bazar, Enayetpur, Tangail - 1900, Bangladesh</span>
@@ -612,6 +612,55 @@
         </div>
     </section>
     <!-- End of Contact Me Section -->
+
+    <!-- Start of Blog Section -->
+    <section class="sib__blog__section" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sib__section__title">
+                        <h2>{ My Blog }</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container sib__blog__grid slideup__anim__hide">
+            <div class="sib__blog__card">
+                <div class="image">
+                    <a href="#" class="category">Coding</a>
+                    <img src="assets/images/blog/coding.png" alt="Blog Post featured image">
+                </div>
+                <div class="content">
+                    <h4 class="title"><a href="#">Lorem ipsum dolor sit amet consectetur.</a></h4>
+                    <p class="description">Blog post image credit: unDraw. Lorem ipsum dolor sit amet conse ctetur adipisi cing elit. Laud antium, numq uam.</p>
+                    <a href="#" class="button__two">Read More</a>
+                </div>
+            </div>
+            <div class="sib__blog__card">
+                <div class="image">
+                    <a href="#" class="category">WordPress</a>
+                    <img src="assets/images/blog/wordpress.png" alt="Blog Post featured image">
+                </div>
+                <div class="content">
+                    <h4 class="title"><a href="#">Lorem ipsum dolor sit amet conse ctetur adipisicing.</a></h4>
+                    <p class="description">Blog post image credit: unDraw. Lorem ipsum dolor sit amet conse ctetur adipisi cing elit. Laud antium, numq uam.</p>
+                    <a href="#" class="button__two">Read More</a>
+                </div>
+            </div>
+            <div class="sib__blog__card">
+                <div class="image">
+                    <a href="#" class="category">Shopify</a>
+                    <img src="assets/images/blog/shopify.png" alt="Blog Post featured image">
+                </div>
+                <div class="content">
+                    <h4 class="title"><a href="#">Lorem ipsum dolor sit amet conse ctetur.</a></h4>
+                    <p class="description">Blog post image credit: unDraw. Lorem ipsum dolor sit amet conse ctetur adipisi cing elit. Laud antium, numq uam.</p>
+                    <a href="#" class="button__two">Read More</a>
+                </div>
+            </div>
+          </div>
+    </section>
+    <!-- End of Blog Section -->
 
     <!-- Start of Footer Section -->
     <section class="sib__footer__section">
@@ -639,6 +688,7 @@
                             <li><a href="#portfolio">Portfolio</a></li>
                             <li><a href="#testimonials">Testimonials</a></li>
                             <li><a href="#contactme">contact me</a></li>
+                            <li><a href="blog.html">blog</a></li>
                         </ul>
                     </div>
                 </div>
@@ -665,7 +715,6 @@
         </div>
     </section>
     <!-- End of Footer Section -->
-
 
     <!-- JS Links -->
     <script src="src/js/plugins/jquery.js"></script>

@@ -1,43 +1,50 @@
 @use './mixin' as utils;
 
 /* Scale Animation */
-.scale__anim__hide {
+.scale__anim__hide,
+.scale__anim__hide__inf {
     opacity: 0;
     scale: 0.5;
     transition: 2s;
 }
 
 @media(prefers-reduced-motion) {
-    .scale__anim__hide {
+    .scale__anim__hide,
+    .scale__anim__hide__inf {
         transition: none;
     }
 }
 
-.scale__anim {
+.scale__anim,
+.scale__anim__inf {
     opacity: 1;
     scale: 1;
 }
 
 /* Blur Aimation */
-.blur__anim__hide {
+.blur__anim__hide,
+.blur__anim__hide__inf {
     opacity: 0;
     filter: blur(8px);
     @include utils.transition-06s;
 }
 
 @media(prefers-reduced-motion) {
-    .blur__anim__hide {
+    .blur__anim__hide,
+    .blur__anim__hide__inf {
         transition: none;
     }
 }
 
-.blur__anim {
+.blur__anim,
+.blur__anim__inf {
     opacity: 1;
     filter: blur(0);
 }
 
 /* Slide In */
-.slidein__anim__hide {
+.slidein__anim__hide,
+.slidein__anim__hide__inf {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100px);
@@ -45,26 +52,47 @@
 }
 
 @media(prefers-reduced-motion) {
-    .slidein__anim__hide {
+    .slidein__anim__hide,
+    .slidein__anim__hide__inf {
         transition: none;
     }
 }
 
-.slidein__anim {
+.slidein__anim,
+.slidein__anim__inf {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
 
+/* Slide Up */
+.slideup__anim__hide,
+.slideup__anim__hide__inf {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+}
+
+@media(prefers-reduced-motion) {
+    .slideup__anim__hide,
+    .slideup__anim__hide__inf {
+        transition: none;
+    }
+}
+
+.slideup__anim,
+.slideup__anim__inf {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /*** Start of Testimonials Section Anim ***/
-/* Slide Top to Bottom */
 @keyframes scrolltoTop {
     to {
       top: -250px;
     }
 }
 
-/* Slide Bottom to Top */
 @keyframes scrolltoBottom {
     to {
       bottom: -250px;

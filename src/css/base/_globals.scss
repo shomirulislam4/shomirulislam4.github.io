@@ -15,3 +15,7 @@ section {
 a {
     @include utils.transition-03s;
 }
+
+body {
+    position: relative;
+}

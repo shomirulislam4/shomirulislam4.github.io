@@ -1,6 +1,17 @@
 @use '../base/index' as base;
 @use '../utilities/index' as utils;
 
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    backdrop-filter: blur(8px);
+    -webkitbackdrop--filter: blur(8px);
+    background: rgba($color: base.$white, $alpha: 0.4);
+}
+
 .sb__header {
     display: flex;
     align-items: center;
@@ -58,7 +69,8 @@
 }
 
 @media (min-width: 992px) {
-    .sb__header .wrapper nav a {
+    .sb__header .wrapper nav a,
+    .sb__header .wrapper nav a.active {
         &::after {
             content: '';
             position: absolute;
@@ -86,6 +98,11 @@
         }
 
         &:hover::before {
+            width: 100%;
+        }
+
+        &.active::after,
+        &.active::before {
             width: 100%;
         }
     }
