@@ -49,7 +49,7 @@
         color: base.$black;
     }
 
-    &:before {
+    &::before {
         aspect-ratio: 1;
         background: base.$SecondaryColor;
         border-radius: 50%;
@@ -63,7 +63,7 @@
         z-index: -10;
     }
 
-    &:hover:before {
+    &:hover::before {
         height: 500%;
     }
 }
@@ -119,7 +119,7 @@
         color: base.$black;
     }
 
-    &:before {
+    &::before {
         aspect-ratio: 1;
         background: base.$SecondaryColor;
         content: "";
@@ -132,7 +132,7 @@
         z-index: -10;
     }
 
-    &:hover:before {
+    &:hover::before {
         height: 500%;
     }
 }
@@ -189,7 +189,7 @@
         color: base.$black;
     }
 
-    &:before {
+    &::before {
         aspect-ratio: 1;
         background: base.$SecondaryColor;
         content: "";
@@ -202,7 +202,7 @@
         z-index: -10;
     }
 
-    &:hover:before {
+    &:hover::before {
         height: 500%;
     }
 }

@@ -88,3 +88,19 @@ $(function() {
         });
     }
 });
+
+/* Portfolio Filter */
+const $grid = $('.sb__portfolio__grid').isotope({
+  itemSelector: '.sbportfolio__item',
+  layoutMode: 'masonry'
+});
+
+$('.sbptflobtn').on('click', function () {
+  const filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+
+  $('.sbptflobtn').removeClass('active');
+  $(this).addClass('active');
+
+  initAnimations();
+});
