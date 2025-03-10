@@ -707,7 +707,8 @@
 }
 @media (min-width: 576px) {
   .sb__blog__section,
-  .sb__blogpost__section {
+  .sb__blogpost__section,
+  .portfolio__page .sb__portfolio__section {
     margin-top: 50px;
   }
 }/*# sourceMappingURL=responsive.css.map */
