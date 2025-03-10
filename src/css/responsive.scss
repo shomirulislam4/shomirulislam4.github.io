@@ -2,7 +2,7 @@
     section {
         margin-top: 30px;
     }
-    .sib__section__title {
+    .sb__section__title {
         margin-bottom: 15px;
         h2 {
             font-size: 34px;
@@ -41,7 +41,7 @@
         padding: 0.625rem 1.5rem;
     }
     /*Hero Section*/
-    .sib__hero__section {
+    .sb__hero__section {
         height: auto;
         .content {
             padding-top: 30px;
@@ -69,7 +69,7 @@
         }
     }
     /*About Me Section*/
-    .sib__aboutme__section {
+    .sb__aboutme__section {
         .sectionbgshape.two {
             top: 0;
             height: 160px;
@@ -92,14 +92,14 @@
         }
     }
     /*Skills Section*/
-    .sib__skills__section {
+    .sb__skills__section {
         padding: 40px 0;
         .wrapper {
             flex-direction: column;
         }
     }
     /*Portfolio Section*/
-    .sib__portfolio__section .sib__portfolio__item .holder .content {
+    .sb__portfolio__section .sb__portfolio__item .holder .content {
         padding: 15px;
         .tags {
             gap: 5px;
@@ -120,13 +120,13 @@
         }
     }
     /*Testimonials Section*/
-    .sib__testimonials__section .wrapper {
+    .sb__testimonials__section .wrapper {
         @keyframes scrolltoBottom {
             to {
             bottom: -190px;
             }
         }
-        .sib__testimonials__col {
+        .sb__testimonials__col {
             height: 210px;
             width: 100%;
             margin-bottom: 10px;
@@ -151,7 +151,7 @@
         }
     }
     /*Contact Me Section*/
-    .sib__contactme__section {
+    .sb__contactme__section {
         @keyframes ToptoBottomAnim {
             0% {
                 transform: translateY(0) translateX(20%);
@@ -198,13 +198,17 @@
             }
         }
     }
+    /*Blog Post*/
+    .sb__blogpost__section .sbblogpost__featured__image {
+        height: 250px;
+    }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
     section {
         margin-top: 45px;
     }
-    .sib__section__title {
+    .sb__section__title {
         margin-bottom: 20px;
         .desc {
             width: 100%;
@@ -226,7 +230,7 @@
         }
     }
     /*Hero Section*/
-    .sib__hero__section {
+    .sb__hero__section {
         height: auto;
         .content {
             padding-top: 30px;
@@ -260,7 +264,7 @@
         }
     }
     /*About Me Section*/
-    .sib__aboutme__section { 
+    .sb__aboutme__section { 
         .sectionbgshape.two {
             top: 0;
             height: 180px;
@@ -282,21 +286,21 @@
         }
     }
     /*Skills Section*/
-    .sib__skills__section {
+    .sb__skills__section {
         padding: 50px 0;
         .wrapper {
             flex-direction: column;
         }
     }
     /*Testimonials Section*/
-    .sib__testimonials__section .wrapper {
+    .sb__testimonials__section .wrapper {
         @keyframes scrolltoBottom {
             to {
             bottom: -190px;
             }
         }
         gap: 10px;
-        .sib__testimonials__col {
+        .sb__testimonials__col {
             height: 210px;
             width: 100%;
             margin-bottom: 10px;
@@ -313,7 +317,7 @@
         }
     }
     /*Contact Me Section*/
-    .sib__contactme__section {
+    .sb__contactme__section {
         .sectionbgshape.two {
             height: 190px;
             width: 190px;
@@ -337,6 +341,10 @@
             }
         }
     }
+    /*Blog Post*/
+    .sb__blogpost__section .sbblogpost__featured__image {
+        height: 300px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -347,7 +355,7 @@
         height: 240px;
         width: 240px;
     }
-    .sib__section__title {
+    .sb__section__title {
         margin-bottom: 25px;
         .desc {
             width: 100%;
@@ -358,7 +366,7 @@
         width: 150px;
     }
     /*Hero Section*/
-    .sib__hero__section {
+    .sb__hero__section {
         height: auto;
         .content {
             padding-top: 30px;
@@ -393,7 +401,7 @@
         }
     }
     /*About Me Section*/
-    .sib__aboutme__section {
+    .sb__aboutme__section {
         .sectionbgshape.two {
             top: 0;
             height: 200px;
@@ -414,18 +422,18 @@
         }
     }
     /*Skills Section*/
-    .sib__skills__section {
+    .sb__skills__section {
         padding: 60px 0;
     }
     /*Testimonials Section*/
-    .sib__testimonials__section .wrapper {
+    .sb__testimonials__section .wrapper {
         @keyframes scrolltoBottom {
             to {
             bottom: -190px;
             }
         }
         gap: 15px;
-        .sib__testimonials__col {
+        .sb__testimonials__col {
             height: 210px;
             width: 100%;
             .testimonials__item {
@@ -441,7 +449,7 @@
         }
     }
     /*Contact Me Section*/
-    .sib__contactme__section .wrapper {
+    .sb__contactme__section .wrapper {
         flex-direction: column;
         gap: 30px;
         .left__side {
@@ -454,6 +462,10 @@
             width: 100%;
         }
     }
+    /*Blog Post*/
+    .sb__blogpost__section .sbblogpost__featured__image {
+        height: 350px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -464,7 +476,7 @@
         height: 280px;
         width: 280px;
     }
-    .sib__section__title .desc {
+    .sb__section__title .desc {
         width: 75%;
     }
     /*Logo*/
@@ -472,7 +484,7 @@
         width: 150px;
     }
     /*Hero Section*/
-    .sib__hero__section {
+    .sb__hero__section {
         height: 400px;
         .content {
             h3 {
@@ -496,7 +508,7 @@
         }
     }
     /*About Me Section*/
-    .sib__aboutme__section {
+    .sb__aboutme__section {
         .sectionbgshape.two {
             top: 0;
             height: 240px;
@@ -507,11 +519,11 @@
         }
     }
     /*Skills Section*/
-    .sib__skills__section {
+    .sb__skills__section {
         padding: 70px 0;
     }
     /*Portfolio Section*/
-    .sib__portfolio__section .sib__portfolio__item .holder .content .specs {
+    .sb__portfolio__section .sb__portfolio__item .holder .content .specs {
         text-overflow: ellipsis;
         line-clamp: 2;
         -webkit-line-clamp: 2;
@@ -520,7 +532,7 @@
         white-space: nowrap;
     }
     /*Testimonials Section*/
-    .sib__testimonials__section .wrapper {
+    .sb__testimonials__section .wrapper {
         @keyframes scrolltoTop {
             to {
             top: -230px;
@@ -531,7 +543,7 @@
             bottom: -230px;
             }
         }
-        .sib__testimonials__col {
+        .sb__testimonials__col {
             height: 600px;
             width: 48.5%;
             .testimonials__item {
@@ -549,7 +561,7 @@
         }
     }
     /*Contact Me Section*/
-    .sib__contactme__section .wrapper {
+    .sb__contactme__section .wrapper {
         gap: 30px;
         .left__side {
             width: 55%;
@@ -558,6 +570,10 @@
             width: 40%;
             padding: 20px;
         }
+    }
+    /*Blog Post*/
+    .sb__blogpost__section .sbblogpost__featured__image {
+        height: 450px;
     }
 }
 
@@ -569,7 +585,7 @@
         height: 280px;
         width: 280px;
     }
-    .sib__section__title .desc {
+    .sb__section__title .desc {
         width: 60%;
     }
     /*Header*/
@@ -578,7 +594,7 @@
         gap: 40px;
     }
     /*Hero Section*/
-    .sib__hero__section {
+    .sb__hero__section {
         height: 520px;
         .content {
             h3 {
@@ -602,7 +618,7 @@
         }
     }
     /*About Me Section*/
-    .sib__aboutme__section {
+    .sb__aboutme__section {
         .sectionbgshape.two {
             top: 0;
             height: 240px;
@@ -613,11 +629,11 @@
         }
     }
     /*Skills Section*/
-    .sib__skills__section {
+    .sb__skills__section {
         padding: 80px 0;
     }
     /*Testimonials Section*/
-    .sib__testimonials__section .wrapper {
+    .sb__testimonials__section .wrapper {
         @keyframes scrolltoTop {
             to {
             top: -205px;
@@ -628,7 +644,7 @@
             bottom: -205px;
             }
         }
-        .sib__testimonials__col {
+        .sb__testimonials__col {
             .testimonials__item {
                 padding: 10px;
                 height: 210px;
@@ -651,7 +667,7 @@
         }
     }
     /*Contact Me Section*/
-    .sib__contactme__section .wrapper {
+    .sb__contactme__section .wrapper {
         .left__side {
             width: 55%;
         }
@@ -671,7 +687,7 @@
         gap: 50px;
     }
     /*Hero Section*/
-    .sib__hero__section {
+    .sb__hero__section {
         height: 650px;
         .content {
             h3 {
@@ -688,7 +704,7 @@
         }
     }
     /*About Me Section*/
-    .sib__aboutme__section {
+    .sb__aboutme__section {
         .sectionbgshape.two {
             top: 0;
             height: 280px;
@@ -699,11 +715,11 @@
         }
     }
     /*Skills Section*/
-    .sib__skills__section {
+    .sb__skills__section {
         padding: 90px 0;
     }
     /*Testimonials Section*/
-    .sib__testimonials__section {
+    .sb__testimonials__section {
         @keyframes scrolltoTop {
             to {
               top: -210px;
@@ -714,7 +730,7 @@
               bottom: -210px;
             }
         }
-        .wrapper .sib__testimonials__col {
+        .wrapper .sb__testimonials__col {
             &.one .testimonials__item,
             &.three .testimonials__item {
                 bottom: max(calc(180px * 4), 100%);
@@ -733,12 +749,19 @@
         }
     }
     /*Contact Me Section*/
-    .sib__contactme__section .wrapper {
+    .sb__contactme__section .wrapper {
         .left__side {
             width: 60%;
         }
         .right__side {
             width: 35%;
         }
+    }
+}
+
+@media (min-width: 576px) {
+    .sb__blog__section,
+    .sb__blogpost__section {
+        margin-top: 50px;
     }
 }

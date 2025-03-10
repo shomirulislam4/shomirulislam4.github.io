@@ -5,6 +5,7 @@
 .button__one {
     all: unset;
     -webkit-tap-highlight-color: transparent;
+    mask-image: -webkit-radial-gradient(base.$black, base.$cream);
     -webkit-mask-image: -webkit-radial-gradient(base.$black, base.$cream);
     background: base.$black;
     color: base.$cream;
@@ -23,6 +24,7 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: fit-content;
     gap: 10px;
     @include utils.transition-03s;
@@ -37,7 +39,6 @@
 
     svg {
         display: block;
-        vertical-align: middle;
     }
 
     span {
@@ -75,6 +76,7 @@
 .button__two {
     all: unset;
     -webkit-tap-highlight-color: transparent;
+    mask-image: -webkit-radial-gradient(base.$black, base.$cream);
     -webkit-mask-image: -webkit-radial-gradient(base.$black, base.$cream);
     background: base.$black;
     color: base.$cream;
@@ -92,6 +94,7 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: fit-content;
     gap: 10px;
     @include utils.transition-03s;
@@ -106,7 +109,6 @@
 
     svg {
         display: block;
-        vertical-align: middle;
     }
 
     span {
@@ -143,6 +145,7 @@
 .button__three {
     all: unset;
     -webkit-tap-highlight-color: transparent;
+    mask-image: -webkit-radial-gradient(base.$black, base.$cream);
     -webkit-mask-image: -webkit-radial-gradient(base.$black, base.$cream);
     background: base.$cream;
     color: base.$black;
@@ -161,6 +164,7 @@
     border: 1px solid base.$black;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: fit-content;
     gap: 10px;
     @include utils.transition-03s;
@@ -175,7 +179,6 @@
 
     svg {
         display: block;
-        vertical-align: middle;
     }
 
     span {

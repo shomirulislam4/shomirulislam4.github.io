@@ -69,6 +69,7 @@
 .slideup__anim__hide,
 .slideup__anim__hide__inf {
     opacity: 0;
+    filter: blur(5px);
     transform: translateY(100px);
     transition: 1s;
 }
@@ -83,6 +84,7 @@
 .slideup__anim,
 .slideup__anim__inf {
     opacity: 1;
+    filter: blur(0);
     transform: translateY(0);
 }
 

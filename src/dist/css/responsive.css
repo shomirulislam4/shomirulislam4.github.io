@@ -2,14 +2,14 @@
   section {
     margin-top: 30px;
   }
-  .sib__section__title {
+  .sb__section__title {
     margin-bottom: 15px;
   }
-  .sib__section__title h2 {
+  .sb__section__title h2 {
     font-size: 34px;
     line-height: 50px;
   }
-  .sib__section__title .desc {
+  .sb__section__title .desc {
     width: 100%;
     margin-top: 10px;
   }
@@ -41,69 +41,69 @@
     padding: 0.625rem 1.5rem;
   }
   /*Hero Section*/
-  .sib__hero__section {
+  .sb__hero__section {
     height: auto;
   }
-  .sib__hero__section .content {
+  .sb__hero__section .content {
     padding-top: 30px;
   }
-  .sib__hero__section .content h3 {
+  .sb__hero__section .content h3 {
     font-size: 20px;
     line-height: 120%;
     margin-bottom: 14px;
   }
-  .sib__hero__section .content h1 {
+  .sb__hero__section .content h1 {
     font-size: 48px;
   }
-  .sib__hero__section .content h1::before {
+  .sb__hero__section .content h1::before {
     top: -15px;
     right: 0;
     height: 50px;
     width: 50px;
   }
-  .sib__hero__section .content .cta__buttons {
+  .sb__hero__section .content .cta__buttons {
     margin-top: 20px;
     gap: 20px;
   }
-  .sib__hero__section .image {
+  .sb__hero__section .image {
     margin-top: 20px;
   }
   /*About Me Section*/
-  .sib__aboutme__section .sectionbgshape.two {
+  .sb__aboutme__section .sectionbgshape.two {
     top: 0;
     height: 160px;
     width: 160px;
   }
-  .sib__aboutme__section .wrapper .info {
+  .sb__aboutme__section .wrapper .info {
     gap: 18px;
     flex-direction: row;
     justify-content: center;
   }
-  .sib__aboutme__section .wrapper .info .item {
+  .sb__aboutme__section .wrapper .info .item {
     width: 100%;
     gap: 5px;
   }
-  .sib__aboutme__section .wrapper .info .item .number {
+  .sb__aboutme__section .wrapper .info .item .number {
     font-size: 40px;
   }
-  .sib__aboutme__section .wrapper .info .item .number span {
+  .sb__aboutme__section .wrapper .info .item .number span {
     font-size: 35px;
   }
   /*Skills Section*/
-  .sib__skills__section {
+  .sb__skills__section {
     padding: 40px 0;
   }
-  .sib__skills__section .wrapper {
+  .sb__skills__section .wrapper {
     flex-direction: column;
   }
   /*Portfolio Section*/
-  .sib__portfolio__section .sib__portfolio__item .holder .content {
+  .sb__portfolio__section .sb__portfolio__item .holder .content {
     padding: 15px;
   }
-  .sib__portfolio__section .sib__portfolio__item .holder .content .tags {
+  .sb__portfolio__section .sb__portfolio__item .holder .content .tags {
     gap: 5px;
   }
-  .sib__portfolio__section .sib__portfolio__item .holder .content .specs, .sib__portfolio__section .sib__portfolio__item .holder .content .title {
+  .sb__portfolio__section .sb__portfolio__item .holder .content .specs, .sb__portfolio__section .sb__portfolio__item .holder .content .title {
     text-overflow: ellipsis;
     line-clamp: 2;
     -webkit-line-clamp: 2;
@@ -111,10 +111,10 @@
     overflow: hidden;
     white-space: nowrap;
   }
-  .sib__portfolio__section .sib__portfolio__item .holder .content .cta__btns {
+  .sb__portfolio__section .sb__portfolio__item .holder .content .cta__btns {
     gap: 10px;
   }
-  .sib__portfolio__section .sib__portfolio__item .holder .content .cta__btns .button__two {
+  .sb__portfolio__section .sb__portfolio__item .holder .content .cta__btns .button__two {
     padding: 6px 13px;
   }
   /*Testimonials Section*/
@@ -123,23 +123,23 @@
       bottom: -190px;
     }
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col {
+  .sb__testimonials__section .wrapper .sb__testimonials__col {
     height: 210px;
     width: 100%;
     margin-bottom: 10px;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col .testimonials__item {
     padding: 10px;
     height: 190px;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item .top .author {
+  .sb__testimonials__section .wrapper .sb__testimonials__col .testimonials__item .top .author {
     gap: 8px;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item .top .author img {
+  .sb__testimonials__section .wrapper .sb__testimonials__col .testimonials__item .top .author img {
     width: 40px;
     height: 40px;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col.one .testimonials__item, .sib__testimonials__section .wrapper .sib__testimonials__col.two .testimonials__item, .sib__testimonials__section .wrapper .sib__testimonials__col.three .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col.one .testimonials__item, .sb__testimonials__section .wrapper .sb__testimonials__col.two .testimonials__item, .sb__testimonials__section .wrapper .sb__testimonials__col.three .testimonials__item {
     top: unset;
     bottom: max(600px, 100%);
     animation-name: scrolltoBottom;
@@ -167,38 +167,42 @@
       transform: translateY(100%) translateX(0);
     }
   }
-  .sib__contactme__section .sectionbgshape.two {
+  .sb__contactme__section .sectionbgshape.two {
     height: 170px;
     width: 170px;
     right: 20%;
   }
-  .sib__contactme__section .wrapper {
+  .sb__contactme__section .wrapper {
     flex-direction: column;
     gap: 20px;
   }
-  .sib__contactme__section .wrapper .left__side {
+  .sb__contactme__section .wrapper .left__side {
     width: 100%;
   }
-  .sib__contactme__section .wrapper .left__side form button {
+  .sb__contactme__section .wrapper .left__side form button {
     margin-top: 5px;
   }
-  .sib__contactme__section .wrapper .right__side {
+  .sb__contactme__section .wrapper .right__side {
     width: 100%;
     padding: 15px;
   }
-  .sib__contactme__section .wrapper .right__side span svg {
+  .sb__contactme__section .wrapper .right__side span svg {
     height: 12px;
     width: 12px;
+  }
+  /*Blog Post*/
+  .sb__blogpost__section .sbblogpost__featured__image {
+    height: 250px;
   }
 }
 @media (min-width: 415px) and (max-width: 575px) {
   section {
     margin-top: 45px;
   }
-  .sib__section__title {
+  .sb__section__title {
     margin-bottom: 20px;
   }
-  .sib__section__title .desc {
+  .sb__section__title .desc {
     width: 100%;
   }
   .sectionbgshape {
@@ -217,68 +221,68 @@
     padding-top: 60px;
   }
   /*Hero Section*/
-  .sib__hero__section {
+  .sb__hero__section {
     height: auto;
   }
-  .sib__hero__section .content {
+  .sb__hero__section .content {
     padding-top: 30px;
   }
-  .sib__hero__section .content h3 {
+  .sb__hero__section .content h3 {
     font-size: 24px;
     line-height: 120%;
     margin-bottom: 14px;
   }
-  .sib__hero__section .content h1 {
+  .sb__hero__section .content h1 {
     font-size: 66px;
   }
-  .sib__hero__section .content h1::before {
+  .sb__hero__section .content h1::before {
     top: -15px;
     right: 0;
     height: 60px;
     width: 60px;
   }
-  .sib__hero__section .content .cta__buttons {
+  .sb__hero__section .content .cta__buttons {
     margin-top: 25px;
     gap: 20px;
   }
-  .sib__hero__section .image {
+  .sb__hero__section .image {
     height: 400px;
     justify-content: center;
     margin-top: 30px;
   }
-  .sib__hero__section .image img {
+  .sb__hero__section .image img {
     height: 100%;
     width: auto;
   }
   /*About Me Section*/
-  .sib__aboutme__section .sectionbgshape.two {
+  .sb__aboutme__section .sectionbgshape.two {
     top: 0;
     height: 180px;
     width: 180px;
   }
-  .sib__aboutme__section .wrapper .info {
+  .sb__aboutme__section .wrapper .info {
     gap: 15px;
     flex-direction: row;
     justify-content: center;
   }
-  .sib__aboutme__section .wrapper .info .item {
+  .sb__aboutme__section .wrapper .info .item {
     width: 47%;
   }
-  .sib__aboutme__section .wrapper .info .item .number {
+  .sb__aboutme__section .wrapper .info .item .number {
     font-size: 40px;
   }
-  .sib__aboutme__section .wrapper .info .item .number span {
+  .sb__aboutme__section .wrapper .info .item .number span {
     font-size: 35px;
   }
   /*Skills Section*/
-  .sib__skills__section {
+  .sb__skills__section {
     padding: 50px 0;
   }
-  .sib__skills__section .wrapper {
+  .sb__skills__section .wrapper {
     flex-direction: column;
   }
   /*Testimonials Section*/
-  .sib__testimonials__section .wrapper {
+  .sb__testimonials__section .wrapper {
     gap: 10px;
   }
   @keyframes scrolltoBottom {
@@ -286,41 +290,45 @@
       bottom: -190px;
     }
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col {
+  .sb__testimonials__section .wrapper .sb__testimonials__col {
     height: 210px;
     width: 100%;
     margin-bottom: 10px;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col .testimonials__item {
     height: 190px;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col.one .testimonials__item, .sib__testimonials__section .wrapper .sib__testimonials__col.two .testimonials__item, .sib__testimonials__section .wrapper .sib__testimonials__col.three .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col.one .testimonials__item, .sb__testimonials__section .wrapper .sb__testimonials__col.two .testimonials__item, .sb__testimonials__section .wrapper .sb__testimonials__col.three .testimonials__item {
     top: unset;
     bottom: max(600px, 100%);
     animation-name: scrolltoBottom;
   }
   /*Contact Me Section*/
-  .sib__contactme__section .sectionbgshape.two {
+  .sb__contactme__section .sectionbgshape.two {
     height: 190px;
     width: 190px;
   }
-  .sib__contactme__section .wrapper {
+  .sb__contactme__section .wrapper {
     flex-direction: column;
     gap: 30px;
   }
-  .sib__contactme__section .wrapper .left__side {
+  .sb__contactme__section .wrapper .left__side {
     width: 100%;
   }
-  .sib__contactme__section .wrapper .left__side form button {
+  .sb__contactme__section .wrapper .left__side form button {
     margin-top: 10px;
   }
-  .sib__contactme__section .wrapper .right__side {
+  .sb__contactme__section .wrapper .right__side {
     width: 100%;
     padding: 20px;
   }
-  .sib__contactme__section .wrapper .right__side span svg {
+  .sb__contactme__section .wrapper .right__side span svg {
     height: 12px;
     width: 12px;
+  }
+  /*Blog Post*/
+  .sb__blogpost__section .sbblogpost__featured__image {
+    height: 300px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -331,10 +339,10 @@
     height: 240px;
     width: 240px;
   }
-  .sib__section__title {
+  .sb__section__title {
     margin-bottom: 25px;
   }
-  .sib__section__title .desc {
+  .sb__section__title .desc {
     width: 100%;
   }
   /*Logo*/
@@ -342,65 +350,65 @@
     width: 150px;
   }
   /*Hero Section*/
-  .sib__hero__section {
+  .sb__hero__section {
     height: auto;
   }
-  .sib__hero__section .content {
+  .sb__hero__section .content {
     padding-top: 30px;
   }
-  .sib__hero__section .content h3 {
+  .sb__hero__section .content h3 {
     font-size: 24px;
     line-height: 110%;
     margin-bottom: 14px;
   }
-  .sib__hero__section .content h1 {
+  .sb__hero__section .content h1 {
     font-size: 66px;
     line-height: 110%;
   }
-  .sib__hero__section .content h1::before {
+  .sb__hero__section .content h1::before {
     top: 40px;
     right: -15px;
     height: 80px;
     width: 80px;
   }
-  .sib__hero__section .content .cta__buttons {
+  .sb__hero__section .content .cta__buttons {
     margin-top: 25px;
     gap: 30px;
   }
-  .sib__hero__section .image {
+  .sb__hero__section .image {
     height: 400px;
     justify-content: center;
     margin-top: 30px;
   }
-  .sib__hero__section .image img {
+  .sb__hero__section .image img {
     height: 100%;
     width: auto;
   }
   /*About Me Section*/
-  .sib__aboutme__section .sectionbgshape.two {
+  .sb__aboutme__section .sectionbgshape.two {
     top: 0;
     height: 200px;
     width: 200px;
   }
-  .sib__aboutme__section .wrapper .info {
+  .sb__aboutme__section .wrapper .info {
     gap: 18px;
     flex-direction: row;
   }
-  .sib__aboutme__section .wrapper .info .item {
+  .sb__aboutme__section .wrapper .info .item {
     width: 31%;
   }
-  .sib__aboutme__section .wrapper .info .item .number {
+  .sb__aboutme__section .wrapper .info .item .number {
     font-size: 45px;
   }
-  .sib__aboutme__section .wrapper .info .item .number span {
+  .sb__aboutme__section .wrapper .info .item .number span {
     font-size: 40px;
   }
   /*Skills Section*/
-  .sib__skills__section {
+  .sb__skills__section {
     padding: 60px 0;
   }
   /*Testimonials Section*/
-  .sib__testimonials__section .wrapper {
+  .sb__testimonials__section .wrapper {
     gap: 15px;
   }
   @keyframes scrolltoBottom {
@@ -408,31 +416,35 @@
       bottom: -190px;
     }
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col {
+  .sb__testimonials__section .wrapper .sb__testimonials__col {
     height: 210px;
     width: 100%;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col .testimonials__item {
     height: 190px;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col.one .testimonials__item, .sib__testimonials__section .wrapper .sib__testimonials__col.two .testimonials__item, .sib__testimonials__section .wrapper .sib__testimonials__col.three .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col.one .testimonials__item, .sb__testimonials__section .wrapper .sb__testimonials__col.two .testimonials__item, .sb__testimonials__section .wrapper .sb__testimonials__col.three .testimonials__item {
     top: unset;
     bottom: max(600px, 100%);
     animation-name: scrolltoBottom;
   }
   /*Contact Me Section*/
-  .sib__contactme__section .wrapper {
+  .sb__contactme__section .wrapper {
     flex-direction: column;
     gap: 30px;
   }
-  .sib__contactme__section .wrapper .left__side {
+  .sb__contactme__section .wrapper .left__side {
     width: 100%;
   }
-  .sib__contactme__section .wrapper .left__side form button {
+  .sb__contactme__section .wrapper .left__side form button {
     margin-top: 15px;
   }
-  .sib__contactme__section .wrapper .right__side {
+  .sb__contactme__section .wrapper .right__side {
     width: 100%;
+  }
+  /*Blog Post*/
+  .sb__blogpost__section .sbblogpost__featured__image {
+    height: 350px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -443,7 +455,7 @@
     height: 280px;
     width: 280px;
   }
-  .sib__section__title .desc {
+  .sb__section__title .desc {
     width: 75%;
   }
   /*Logo*/
@@ -451,42 +463,42 @@
     width: 150px;
   }
   /*Hero Section*/
-  .sib__hero__section {
+  .sb__hero__section {
     height: 400px;
   }
-  .sib__hero__section .content h3 {
+  .sb__hero__section .content h3 {
     font-size: 26px;
     line-height: 115%;
     margin-bottom: 14px;
   }
-  .sib__hero__section .content h1 {
+  .sb__hero__section .content h1 {
     font-size: 72px;
   }
-  .sib__hero__section .content h1::before {
+  .sb__hero__section .content h1::before {
     top: -10px;
     right: -10px;
     height: 60px;
     width: 60px;
   }
-  .sib__hero__section .content .cta__buttons {
+  .sb__hero__section .content .cta__buttons {
     margin-top: 25px;
     gap: 30px;
   }
   /*About Me Section*/
-  .sib__aboutme__section .sectionbgshape.two {
+  .sb__aboutme__section .sectionbgshape.two {
     top: 0;
     height: 240px;
     width: 240px;
   }
-  .sib__aboutme__section .wrapper .info .item {
+  .sb__aboutme__section .wrapper .info .item {
     width: 100%;
   }
   /*Skills Section*/
-  .sib__skills__section {
+  .sb__skills__section {
     padding: 70px 0;
   }
   /*Portfolio Section*/
-  .sib__portfolio__section .sib__portfolio__item .holder .content .specs {
+  .sb__portfolio__section .sb__portfolio__item .holder .content .specs {
     text-overflow: ellipsis;
     line-clamp: 2;
     -webkit-line-clamp: 2;
@@ -505,32 +517,36 @@
       bottom: -230px;
     }
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col {
+  .sb__testimonials__section .wrapper .sb__testimonials__col {
     height: 600px;
     width: 48.5%;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col .testimonials__item {
     height: 230px;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col.one .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col.one .testimonials__item {
     bottom: max(772px, 100%);
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col.two .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col.two .testimonials__item {
     top: max(772px, 100%);
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col.three {
+  .sb__testimonials__section .wrapper .sb__testimonials__col.three {
     display: none;
   }
   /*Contact Me Section*/
-  .sib__contactme__section .wrapper {
+  .sb__contactme__section .wrapper {
     gap: 30px;
   }
-  .sib__contactme__section .wrapper .left__side {
+  .sb__contactme__section .wrapper .left__side {
     width: 55%;
   }
-  .sib__contactme__section .wrapper .right__side {
+  .sb__contactme__section .wrapper .right__side {
     width: 40%;
     padding: 20px;
+  }
+  /*Blog Post*/
+  .sb__blogpost__section .sbblogpost__featured__image {
+    height: 450px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -541,7 +557,7 @@
     height: 280px;
     width: 280px;
   }
-  .sib__section__title .desc {
+  .sb__section__title .desc {
     width: 60%;
   }
   /*Header*/
@@ -550,38 +566,38 @@
     gap: 40px;
   }
   /*Hero Section*/
-  .sib__hero__section {
+  .sb__hero__section {
     height: 520px;
   }
-  .sib__hero__section .content h3 {
+  .sb__hero__section .content h3 {
     font-size: 36px;
     line-height: 120%;
     margin-bottom: 16px;
   }
-  .sib__hero__section .content h1 {
+  .sb__hero__section .content h1 {
     font-size: 98px;
   }
-  .sib__hero__section .content h1::before {
+  .sb__hero__section .content h1::before {
     top: -15px;
     right: -15px;
     height: 80px;
     width: 80px;
   }
-  .sib__hero__section .content .cta__buttons {
+  .sb__hero__section .content .cta__buttons {
     margin-top: 30px;
     gap: 30px;
   }
   /*About Me Section*/
-  .sib__aboutme__section .sectionbgshape.two {
+  .sb__aboutme__section .sectionbgshape.two {
     top: 0;
     height: 240px;
     width: 240px;
   }
-  .sib__aboutme__section .wrapper .info .item {
+  .sb__aboutme__section .wrapper .info .item {
     width: 70%;
   }
   /*Skills Section*/
-  .sib__skills__section {
+  .sb__skills__section {
     padding: 80px 0;
   }
   /*Testimonials Section*/
@@ -595,28 +611,28 @@
       bottom: -205px;
     }
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col .testimonials__item {
     padding: 10px;
     height: 210px;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item .top .author {
+  .sb__testimonials__section .wrapper .sb__testimonials__col .testimonials__item .top .author {
     gap: 8px;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item .top .author img {
+  .sb__testimonials__section .wrapper .sb__testimonials__col .testimonials__item .top .author img {
     width: 40px;
     height: 40px;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col.one .testimonials__item, .sib__testimonials__section .wrapper .sib__testimonials__col.three .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col.one .testimonials__item, .sb__testimonials__section .wrapper .sb__testimonials__col.three .testimonials__item {
     bottom: max(640px, 100%);
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col.two .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col.two .testimonials__item {
     top: max(640px, 100%);
   }
   /*Contact Me Section*/
-  .sib__contactme__section .wrapper .left__side {
+  .sb__contactme__section .wrapper .left__side {
     width: 55%;
   }
-  .sib__contactme__section .wrapper .right__side {
+  .sb__contactme__section .wrapper .right__side {
     width: 40%;
   }
 }
@@ -630,31 +646,31 @@
     gap: 50px;
   }
   /*Hero Section*/
-  .sib__hero__section {
+  .sb__hero__section {
     height: 650px;
   }
-  .sib__hero__section .content h3 {
+  .sb__hero__section .content h3 {
     font-size: 42px;
     line-height: 120%;
     margin-bottom: 18px;
   }
-  .sib__hero__section .content h1 {
+  .sb__hero__section .content h1 {
     font-size: 116px;
   }
-  .sib__hero__section .content .cta__buttons {
+  .sb__hero__section .content .cta__buttons {
     margin-top: 30px;
   }
   /*About Me Section*/
-  .sib__aboutme__section .sectionbgshape.two {
+  .sb__aboutme__section .sectionbgshape.two {
     top: 0;
     height: 280px;
     width: 280px;
   }
-  .sib__aboutme__section .wrapper .info .item {
+  .sb__aboutme__section .wrapper .info .item {
     width: 65%;
   }
   /*Skills Section*/
-  .sib__skills__section {
+  .sb__skills__section {
     padding: 90px 0;
   }
   /*Testimonials Section*/
@@ -668,25 +684,31 @@
       bottom: -210px;
     }
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col.one .testimonials__item, .sib__testimonials__section .wrapper .sib__testimonials__col.three .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col.one .testimonials__item, .sb__testimonials__section .wrapper .sb__testimonials__col.three .testimonials__item {
     bottom: max(720px, 100%);
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col.two .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col.two .testimonials__item {
     top: max(720px, 100%);
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item {
+  .sb__testimonials__section .wrapper .sb__testimonials__col .testimonials__item {
     padding: 10px;
     height: 210px;
   }
-  .sib__testimonials__section .wrapper .sib__testimonials__col .testimonials__item .top .author img {
+  .sb__testimonials__section .wrapper .sb__testimonials__col .testimonials__item .top .author img {
     width: 40px;
     height: 40px;
   }
   /*Contact Me Section*/
-  .sib__contactme__section .wrapper .left__side {
+  .sb__contactme__section .wrapper .left__side {
     width: 60%;
   }
-  .sib__contactme__section .wrapper .right__side {
+  .sb__contactme__section .wrapper .right__side {
     width: 35%;
+  }
+}
+@media (min-width: 576px) {
+  .sb__blog__section,
+  .sb__blogpost__section {
+    margin-top: 50px;
   }
 }/*# sourceMappingURL=responsive.css.map */

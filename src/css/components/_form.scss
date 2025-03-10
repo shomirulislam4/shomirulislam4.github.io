@@ -10,11 +10,22 @@ form {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        width: 100%;
 
         label {
             @include base.medium__text;
             color: base.$black;
         }
+    }
+
+    .search__row {
+        display: flex;
+        gap: 10px
+    }
+
+    .form__row {
+        display: flex;
+        gap: 20px;
     }
 
     input {

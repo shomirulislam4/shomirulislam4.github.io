@@ -43,7 +43,7 @@ header {
             padding: 0.625rem 1.5rem;
         }
 
-        .sib__mainmenu__close {
+        .sb__mainmenu__close {
             display: none;
             position: absolute;
             top: 15px;
@@ -57,7 +57,7 @@ header {
         }
     }
 
-    .sib__main__menu {
+    .sb__main__menu {
         display: none;
         padding: 6px 20px;
 
@@ -150,12 +150,12 @@ header {
                 padding: 1rem 2rem;
             }
 
-            .sib__mainmenu__close {
+            .sb__mainmenu__close {
                 display: block;
             }
         }
 
-        .sib__main__menu {
+        .sb__main__menu {
             display: block;
         }
     }
