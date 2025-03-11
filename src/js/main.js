@@ -89,6 +89,51 @@ $(function() {
     }
 });
 
+/* Skill Progression */
+$(function() {
+  function isVisible(element) {
+    const windowTop = $(window).scrollTop();
+    const windowBottom = windowTop + $(window).height();
+    const elementTop = $(element).offset().top;
+    const elementBottom = elementTop + $(element).outerHeight();
+
+    return elementBottom > windowTop && elementTop < windowBottom;
+  }
+
+  function animateProgressBar($bar) {
+    if ($bar.data('animated')) return;
+
+    $bar.data('animated', true);
+
+    const target = parseInt($bar.data('progress'), 10);
+    const $percentText = $bar.find('.progress__percent');
+
+    $bar.css('width', target + '%');
+
+    let current = 0;
+    const interval = setInterval(() => {
+      if (current >= target) {
+        clearInterval(interval);
+      } else {
+        current++;
+        $percentText.text(current + '%');
+
+        const barWidth = $bar.outerWidth();
+        const containerWidth = $bar.parent().outerWidth();
+        const position = (barWidth / containerWidth) * 100;
+      }
+    }, 20);
+  }
+
+  $(window).on('scroll load', function() {
+    $('.progress__bar').each(function() {
+      if (isVisible(this)) {
+        animateProgressBar($(this));
+      }
+    });
+  });
+});
+
 /* Portfolio Filter */
 const $grid = $('.sb__portfolio__grid').isotope({
   itemSelector: '.sbportfolio__item',

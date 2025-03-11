@@ -182,29 +182,113 @@
                 opacity: 1;
             }
 
+            .progress__bar__container {
+                position: relative;
+                width: 100%;
+                height: 8px;
+                background: base.$white;
+                border-radius: 10px;
+                margin-top: 15px;
+                overflow: visible;
+
+                .progress__bar {
+                    position: absolute;
+                    height: 100%;
+                    width: 0;
+                    background: base.$black;
+                    border-radius: 10px;
+                    transition: width 2s ease-out, background 0.3s ease-in-out;
+    
+                    .progress__percent {
+                        position: absolute;
+                        top: -25px;
+                        right: 0;
+                        font-size: 14px;
+                        color: base.$black;
+                        font-weight: bold;
+                        opacity: 1;
+                        z-index: 10;
+                        @include utils.transition-03s;
+                    } 
+                }
+            }
+
             .icon {
                 font-size: 40px;
                 color: base.$black;
                 margin-bottom: 10px;
             }
 
-            &:hover .icon {
-                color: base.$PrimaryColor;
-
-                .fa-sass {
-                    color: #CF649A;
+            &:hover {
+                .icon {
+                    color: base.$PrimaryColor;
                 }
 
-                .fa-react {
-                    color: #58C4DC;
+                .progress__bar__container .progress__bar {
+                    background: base.$PrimaryColor;
+                    .progress__percent {
+                        color: base.$PrimaryColor;
+                    }
                 }
-
-                .fa-wordpress-simple {
-                    color: #444140;
+                
+                &.sass {
+                    .progress__bar__container .progress__bar {
+                        background: #CF649A;
+                        .progress__percent {
+                            color: #CF649A;
+                        }
+                    }
+                    .icon {
+                        color: #CF649A;
+                    }
                 }
-
-                .fa-shopify {
-                    color: #98C14C;
+    
+                &.react {
+                    .progress__bar__container .progress__bar {
+                        background: #58C4DC;
+                        .progress__percent {
+                            color: #58C4DC;
+                        }
+                    }
+                    .icon {
+                        color: #58C4DC;
+                    }
+                }
+    
+                &.wordpress {
+                    .progress__bar__container .progress__bar {
+                        background: #444140;
+                        .progress__percent {
+                            color: #444140;
+                        }
+                    }
+                    .icon {
+                        color: #444140;
+                    }
+                }
+    
+                &.shopify {
+                    .progress__bar__container .progress__bar {
+                        background: #98C14C;
+                        .progress__percent {
+                            color: #98C14C;
+                        }
+                    }
+                    .icon {
+                        color: #98C14C;
+                    }
+                }
+    
+                &.custom {
+                    .progress__bar__container .progress__bar {
+                        background: base.$SecondaryColor;
+                        .progress__percent {
+                            color: base.$SecondaryColor;
+                        }
+                    }
+                    .icon {
+                        color: base.$SecondaryColor;
+                    }
                 }
             }
 
