@@ -149,3 +149,26 @@ $('.sbptflobtn').on('click', function () {
 
   initAnimations();
 });
+
+/* About Us Counter */
+const counterUp = window.counterUp.default;
+
+const callback = (entries, observer) => {
+  entries.forEach(entry => {
+    const el = entry.target;
+    if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+      counterUp(el, {
+        duration: 1000,
+        delay: 5,
+      });
+      el.classList.add('is-visible');
+      observer.unobserve(el);
+    }
+  });
+};
+
+const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+document.querySelectorAll('.number').forEach(el => {
+  IO.observe(el);
+});

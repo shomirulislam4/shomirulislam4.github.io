@@ -2414,6 +2414,17 @@ header {
   gap: 20px;
   flex-wrap: wrap;
 }
+.sb__portfolio__section .sectionbgshape {
+  background: #98C14C;
+  top: 10%;
+}
+.sb__portfolio__section .sectionbgshape.two {
+  background: #CF649A;
+  top: unset;
+  left: unset;
+  right: 0;
+  bottom: 20%;
+}
 .sb__portfolio__section .sb__portfolio__item {
   display: block;
   width: 100%;
@@ -2780,7 +2791,7 @@ header {
   gap: 10px;
   width: 60%;
 }
-.sb__aboutme__section .wrapper .info .item .number {
+.sb__aboutme__section .wrapper .info .item .itemnum {
   display: flex;
   align-items: flex-end;
   font-size: 60px;
@@ -2789,7 +2800,7 @@ header {
   gap: 5px;
   font-family: "Anonymous Pro";
 }
-.sb__aboutme__section .wrapper .info .item .number span {
+.sb__aboutme__section .wrapper .info .item .itemnum span {
   font-size: 50px;
   line-height: 100%;
   font-family: "Anonymous Pro";
@@ -3005,6 +3016,10 @@ header {
 }
 /*** End of Skills Section Section ***/
 /*** Start of Testimonials Section ***/
+.sb__testimonials__section .sectionbgshape {
+  background: #444140;
+  animation: ToptoBottomAnim 30s linear infinite;
+}
 .sb__testimonials__section .wrapper {
   display: flex;
   align-items: flex-start;

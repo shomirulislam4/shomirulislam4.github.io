@@ -8,6 +8,19 @@
     gap: 20px;
     flex-wrap: wrap;
 
+    .sectionbgshape {
+        background: #98C14C;
+        top: 10%;
+    }
+
+    .sectionbgshape.two {
+        background: #CF649A;
+        top: unset;
+        left: unset;
+        right: 0;
+        bottom: 20%;
+    }
+
     .sb__portfolio__item {
         display: block;
         width: 100%;

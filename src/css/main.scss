@@ -106,7 +106,7 @@
                 gap: 10px;
                 width: 60%;
 
-                .number {
+                .itemnum {
                     display: flex;
                     align-items: flex-end;
                     font-size: 60px;
@@ -313,119 +313,126 @@
 /*** End of Skills Section Section ***/
 
 /*** Start of Testimonials Section ***/
-.sb__testimonials__section .wrapper {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.sb__testimonials__section {
+    .sectionbgshape {
+        background: #444140;
+        animation: ToptoBottomAnim 30s linear infinite;
+    }
 
-    .sb__testimonials__col {
-        width: 32%;
-        height: 700px;
-        position: relative;
-        overflow: hidden;
-        mask-image: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 1) 10%,
-            rgba(0, 0, 0, 1) 90%,
-            rgba(0, 0, 0, 0)
-        );
-
-        --duration: 60s;
-
-        .testimonials__item {
-            width: 100%;
-            height: 250px;
-            background: base.$cream;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            position: absolute;
-            animation: var(--duration) linear infinite;
-
-            .top {
+    .wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        .sb__testimonials__col {
+            width: 32%;
+            height: 700px;
+            position: relative;
+            overflow: hidden;
+            mask-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 1) 10%,
+                rgba(0, 0, 0, 1) 90%,
+                rgba(0, 0, 0, 0)
+            );
+    
+            --duration: 60s;
+    
+            .testimonials__item {
+                width: 100%;
+                height: 250px;
+                background: base.$cream;
+                padding: 20px;
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
-
-                .author {
+                gap: 5px;
+                position: absolute;
+                animation: var(--duration) linear infinite;
+    
+                .top {
                     display: flex;
-                    align-items: center;
-                    gap: 15px;
-
-                    img {
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50%;
-                        flex-shrink: 0;
-                        flex-grow: 0;
-                    }
-
-                    .name {
-                        h6 {
-                            margin-bottom: 0;
-                            font-family: 'Anonymous Pro', monospace;
-                            font-weight: 700;
+                    flex-direction: column;
+                    gap: 10px;
+    
+                    .author {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+    
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            flex-shrink: 0;
+                            flex-grow: 0;
                         }
-
-                        span {
+    
+                        .name {
+                            h6 {
+                                margin-bottom: 0;
+                                font-family: 'Anonymous Pro', monospace;
+                                font-weight: 700;
+                            }
+    
+                            span {
+                                @include base.small__text;
+                                font-family: 'Anonymous Pro', monospace;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+    
+                    .rating {
+                        display: flex;
+                        align-items: center;
+                        @include base.medium__text;
+    
+                        .star__rating {
                             @include base.small__text;
-                            font-family: 'Anonymous Pro', monospace;
-                            font-weight: 700;
+                            color: gold;
                         }
                     }
                 }
-
-                .rating {
-                    display: flex;
-                    align-items: center;
-                    @include base.medium__text;
-
-                    .star__rating {
-                        @include base.small__text;
-                        color: gold;
+    
+                .review {
+                    flex: auto;
+                    overflow-y: auto;
+                    @include base.small__text;
+    
+                    &::-webkit-scrollbar {
+                        width: 3px;
                     }
                 }
             }
-
-            .review {
-                flex: auto;
-                overflow-y: auto;
-                @include base.small__text;
-
-                &::-webkit-scrollbar {
-                    width: 3px;
-                }
+    
+            &.one .testimonials__item,
+            &.three .testimonials__item {
+                bottom: max(calc(210px * 4), 100%);
+                animation-name: scrolltoBottom;
             }
-        }
-
-        &.one .testimonials__item,
-        &.three .testimonials__item {
-            bottom: max(calc(210px * 4), 100%);
-            animation-name: scrolltoBottom;
-        }
-        
-        &.two .testimonials__item {
-            top: max(calc(210px * 4), 100%);
-            animation-name: scrolltoTop;
-        }
-
-        .testimonials__item:nth-child(1) {
-            animation-delay: calc(var(--duration) / 4 * (4 - 1) * -1);
-        }
-        
-        .testimonials__item:nth-child(2) {
-            animation-delay: calc(var(--duration) / 4 * (4 - 2) * -1);
-        }
-        
-        .testimonials__item:nth-child(3) {
-            animation-delay: calc(var(--duration) / 4 * (4 - 3) * -1);
-        }
-        
-        .testimonials__item:nth-child(4) {
-            animation-delay: calc(var(--duration) / 4 * (4 - 4) * -1);
+            
+            &.two .testimonials__item {
+                top: max(calc(210px * 4), 100%);
+                animation-name: scrolltoTop;
+            }
+    
+            .testimonials__item:nth-child(1) {
+                animation-delay: calc(var(--duration) / 4 * (4 - 1) * -1);
+            }
+            
+            .testimonials__item:nth-child(2) {
+                animation-delay: calc(var(--duration) / 4 * (4 - 2) * -1);
+            }
+            
+            .testimonials__item:nth-child(3) {
+                animation-delay: calc(var(--duration) / 4 * (4 - 3) * -1);
+            }
+            
+            .testimonials__item:nth-child(4) {
+                animation-delay: calc(var(--duration) / 4 * (4 - 4) * -1);
+            }
         }
     }
 }
