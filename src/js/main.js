@@ -135,40 +135,44 @@ $(function() {
 });
 
 /* Portfolio Filter */
-const $grid = $('.sb__portfolio__grid').isotope({
-  itemSelector: '.sbportfolio__item',
-  layoutMode: 'masonry'
-});
+$(function() {
+  //Grid Style
+  const $grid = $('.sb__portfolio__grid').isotope({
+    itemSelector: '.sbportfolio__item',
+    layoutMode: 'masonry'
+  });
 
-$('.sbptflobtn').on('click', function () {
-  const filterValue = $(this).attr('data-filter');
-  $grid.isotope({ filter: filterValue });
+  //Buttons Active Class
+  $('.sbptflobtn').on('click', function () {
+    const filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
 
-  $('.sbptflobtn').removeClass('active');
-  $(this).addClass('active');
+    $('.sbptflobtn').removeClass('active');
+    $(this).addClass('active');
 
-  initAnimations();
+    initAnimations();
+  });
 });
 
 /* About Us Counter */
-const counterUp = window.counterUp.default;
+$(function() {
+  const counterUp = window.counterUp.default;
 
-const callback = (entries, observer) => {
-  entries.forEach(entry => {
-    const el = entry.target;
-    if (entry.isIntersecting && !el.classList.contains('is-visible')) {
-      counterUp(el, {
-        duration: 1000,
-        delay: 5,
+  const IO = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          const $el = $(entry.target);
+          if (entry.isIntersecting && !$el.hasClass('is-visible')) {
+              counterUp(entry.target, {
+                  duration: 1000,
+                  delay: 5,
+              });
+              $el.addClass('is-visible');
+              observer.unobserve(entry.target);
+          }
       });
-      el.classList.add('is-visible');
-      observer.unobserve(el);
-    }
+  }, { threshold: 1 });
+
+  $('.number').each(function () {
+      IO.observe(this);
   });
-};
-
-const IO = new IntersectionObserver(callback, { threshold: 1 });
-
-document.querySelectorAll('.number').forEach(el => {
-  IO.observe(el);
 });
