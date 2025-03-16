@@ -18,6 +18,41 @@
     <link rel="stylesheet" href="src/fontawesome/css/fontawesome.css">
     <link rel="stylesheet" href="src/dist/css/main.css">
     <link rel="stylesheet" href="src/dist/css/responsive.css">
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://exampleportfolio.com/index.html">
+
+    <!-- Open Graph & Twitter Meta Tags -->
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="A short description of your page.">
+    <meta property="og:image" content="https://exampleportfolio.com/image.jpg">
+    <meta property="og:url" content="https://exampleportfolio.com/page">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Page Title">
+    <meta name="twitter:description" content="A short description of your page.">
+    <meta name="twitter:image" content="https://exampleportfolio.com/image.jpg">
+
+    <!-- Schema Markup-->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "jobTitle": "Front-end Web Developer",
+          "url": "https://exampleportfolio.com",
+          "image": "https://exampleportfolio.com/profile.jpg",
+          "sameAs": [
+            "https://github.com/yourprofile",
+            "https://linkedin.com/in/yourprofile",
+            "https://twitter.com/yourprofile"
+          ],
+          "description": "A skilled front-end developer specializing in Shopify, WordPress, and custom web applications.",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance" 
+          },
+          "knowsAbout": ["HTML", "CSS", "Sass", "JavaScript", "React", "Shopify", "WordPress"]
+        }
+    </script>
 </head>
 <body class="blog__post__page">
     <!-- Start of Header Section -->
@@ -46,7 +81,7 @@
     <!-- End of Header Section -->
 
     <!-- Start of Breadcrumb Section -->
-    <section class="sb__breadcrumb__section">
+    <div class="sb__breadcrumb__section">
         <div class="container">
             <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -56,7 +91,7 @@
                 </ol>
             </nav>
         </div>
-    </section>
+    </div>
     <!-- End of Breadcrumb Section -->
 
     <!-- Start of Blog Post Section -->
@@ -279,7 +314,9 @@
     <!-- JS Links -->
     <script src="src/js/plugins/jquery.js"></script>
     <script src="src/js/plugins/bootstrap.js"></script>
-    <script src="src/js/plugins/swiper.js"></script>
+    <script src="src/js/plugins/isotope.js"></script>
+    <script src="src/js/plugins/waypoint.js"></script>
+    <script src="src/js/plugins/counterup.min.js"></script>
     <script src="src/fontawesome/js/fontawesome.js"></script>
     <script src="src/js/main.js"></script>
     <script defer src="src/js/anim.js"></script>

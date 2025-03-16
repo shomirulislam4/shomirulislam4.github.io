@@ -18,8 +18,47 @@
     <link rel="stylesheet" href="src/fontawesome/css/fontawesome.css">
     <link rel="stylesheet" href="src/dist/css/main.css">
     <link rel="stylesheet" href="src/dist/css/responsive.css">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://exampleportfolio.com/index.html">
+
+    <!-- Open Graph & Twitter Meta Tags -->
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="A short description of your page.">
+    <meta property="og:image" content="https://exampleportfolio.com/image.jpg">
+    <meta property="og:url" content="https://exampleportfolio.com/page">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Page Title">
+    <meta name="twitter:description" content="A short description of your page.">
+    <meta name="twitter:image" content="https://exampleportfolio.com/image.jpg">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "jobTitle": "Front-end Web Developer",
+          "url": "https://exampleportfolio.com",
+          "image": "https://exampleportfolio.com/profile.jpg",
+          "sameAs": [
+            "https://github.com/yourprofile",
+            "https://linkedin.com/in/yourprofile",
+            "https://twitter.com/yourprofile"
+          ],
+          "description": "A skilled front-end developer specializing in Shopify, WordPress, and custom web applications.",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance" 
+          },
+          "knowsAbout": ["HTML", "CSS", "Sass", "JavaScript", "React", "Shopify", "WordPress"]
+        }
+    </script>
 </head>
 <body>
+    <div class="pre__loader">
+        <div class="main__preloader"></div>
+    </div>
+
     <!-- Start of Header Section -->
     <header>
         <div class="container sb__header homepageheader">
@@ -89,11 +128,11 @@
                             <span>Years of Experience</span>
                         </div>
                         <div class="item">
-                            <div class="itemnum"><span class="number">40</span>+</div>
+                            <div class="itemnum"><span class="number">90</span>+</div>
                             <span>Total Projects Done</span>
                         </div>
                         <div class="item">
-                            <div class="itemnum"><span class="number">31</span>+</div>
+                            <div class="itemnum"><span class="number">71</span>+</div>
                             <span>Satisfied Clients</span>
                         </div>
                     </div>
@@ -805,7 +844,6 @@
     <!-- JS Links -->
     <script src="src/js/plugins/jquery.js"></script>
     <script src="src/js/plugins/bootstrap.js"></script>
-    <script src="src/js/plugins/swiper.js"></script>
     <script src="src/js/plugins/isotope.js"></script>
     <script src="src/js/plugins/waypoint.js"></script>
     <script src="src/js/plugins/counterup.min.js"></script>

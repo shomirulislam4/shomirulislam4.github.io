@@ -1,3 +1,14 @@
+/* Preloader *
+$(function(){
+  $(window).on("load",function(){
+    $('.pre__loader').delay(1200).fadeOut(500);
+  });
+  $('.pv3-close').on('click', function(){
+    $('.pre__loader').fadeOut(500);
+  })
+});
+*/
+
 /* Auto Nav Link Select */
 $(function() {
   var $navigationLinks = $('.sb__header.homepageheader a');
@@ -135,23 +146,17 @@ $(function() {
 });
 
 /* Portfolio Filter */
-$(function() {
-  //Grid Style
-  const $grid = $('.sb__portfolio__grid').isotope({
-    itemSelector: '.sbportfolio__item',
-    layoutMode: 'masonry'
-  });
+const $grid = $('.sb__portfolio__grid').isotope({
+  itemSelector: '.sbportfolio__item',
+  layoutMode: 'masonry'
+});
 
-  //Buttons Active Class
-  $('.sbptflobtn').on('click', function () {
-    const filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
+$('.sbptflobtn').on('click', function () {
+  const filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
 
-    $('.sbptflobtn').removeClass('active');
-    $(this).addClass('active');
-
-    initAnimations();
-  });
+  $('.sbptflobtn').removeClass('active');
+  $(this).addClass('active');
 });
 
 /* About Us Counter */
