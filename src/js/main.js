@@ -1,13 +1,12 @@
-/* Preloader *
+/* Preloader */
 $(function(){
   $(window).on("load",function(){
     $('.pre__loader').delay(1200).fadeOut(500);
   });
-  $('.pv3-close').on('click', function(){
+  $('.preload__close').on('click', function(){
     $('.pre__loader').fadeOut(500);
   })
 });
-*/
 
 /* Auto Nav Link Select */
 $(function() {

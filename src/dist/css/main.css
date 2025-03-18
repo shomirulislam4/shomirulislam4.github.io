@@ -525,8 +525,7 @@ a:hover {
   display: grid;
   place-content: center;
 }
-
-.main__preloader {
+.pre__loader .main__preloader {
   font-weight: 700;
   font-family: "Anonymous Pro", monospace;
   font-size: 40px;
@@ -534,9 +533,13 @@ a:hover {
           clip-path: inset(0 100% 0 0);
   animation: PreLoaderAnim 2s steps(11) infinite;
 }
-
-.main__preloader:before {
+.pre__loader .main__preloader::before {
   content: "Loading...";
+}
+.pre__loader .preload__close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
 
 @keyframes PreLoaderAnim {

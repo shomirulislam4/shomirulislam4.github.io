@@ -140,18 +140,24 @@
     width: 100%;
     display: grid;
     place-content: center;
-}
 
-.main__preloader {
-    font-weight: 700;
-    font-family: 'Anonymous Pro', monospace;
-    font-size: 40px;
-    clip-path: inset(0 100% 0 0);
-    animation: PreLoaderAnim 2s steps(11) infinite;
-}
+    .main__preloader {
+        font-weight: 700;
+        font-family: 'Anonymous Pro', monospace;
+        font-size: 40px;
+        clip-path: inset(0 100% 0 0);
+        animation: PreLoaderAnim 2s steps(11) infinite;
 
-.main__preloader:before {
-    content:"Loading..."
+        &::before {
+            content:"Loading..."
+        }
+    }
+
+    .preload__close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
 }
 
 @keyframes PreLoaderAnim {
