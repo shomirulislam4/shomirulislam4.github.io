@@ -8,6 +8,55 @@ $(function(){
   })
 });
 
+/* Cursor */
+$(function() {
+  $('body').append('<div class="cursor"></div><div class="cursor-follower"></div>');
+
+  const $cursor = $('.cursor');
+  const $cursorFollower = $('.cursor-follower');
+
+  $(document).on('mousemove', function(e) {
+      $cursor.css({
+          left: e.clientX + 'px',
+          top: e.clientY + 'px'
+      });
+
+      setTimeout(() => {
+          $cursorFollower.css({
+              left: e.clientX + 'px',
+              top: e.clientY + 'px'
+          });
+      }, 80);
+  });
+
+  $(document).on('mousedown', function() {
+      $cursor.css('transform', 'translate(-50%, -50%) scale(0.8)');
+      $cursorFollower.css('transform', 'translate(-50%, -50%) scale(0.6)');
+  });
+
+  $(document).on('mouseup', function() {
+      $cursor.css('transform', 'translate(-50%, -50%) scale(1)');
+      $cursorFollower.css('transform', 'translate(-50%, -50%) scale(1)');
+  });
+
+  $(document).on('mouseenter', 'a, button, input', function() {
+      $cursorFollower.css({
+          'transform': 'translate(-50%, -50%) scale(1.5)',
+          'border-width': '0.5px'
+      });
+      $cursor.css('opacity', '0.5');
+  });
+
+  $(document).on('mouseleave', 'a, button, input', function() {
+      $cursorFollower.css({
+          'transform': 'translate(-50%, -50%) scale(1)',
+          'border-width': '1px'
+      });
+      $cursor.css('opacity', '1');
+  });
+});
+
+
 /* Auto Nav Link Select */
 $(function() {
   var $navigationLinks = $('.sb__header.homepageheader a');
