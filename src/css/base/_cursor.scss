@@ -26,3 +26,9 @@
     transform: translate(-50%, -50%);
     transition: all 0.15s ease-out;
 }
+
+@media (max-width: 991px) {
+    .cursor,.cursor-follower {
+        display: none;
+    }
+}
